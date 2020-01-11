@@ -91,14 +91,44 @@ ignore:
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
+### Markdown-it config
+### Docs: https://github.com/celsomiranda/hexo-renderer-markdown-it/wiki
+markdown:
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: true
+    linkify: true
+    typographer: true
+    quotes: '“”‘’'
+  plugins:
+    - markdown-it-abbr
+    - markdown-it-footnote
+    - markdown-it-ins
+    - markdown-it-sub
+    - markdown-it-sup
+    - markdown-it-emoji
+  anchors:
+    level: 2
+    collisionSuffix: 'v'
+    permalink: true
+    permalinkClass: header-anchor
+    permalinkSymbol: ¶
 ## Themes: https://hexo.io/themes/
-## obsidian: https://github: com/TriDiamond/hexo-theme-obsidian:
+### obsidian: https://github: com/TriDiamond/hexo-theme-obsidian:
 search:
   path: search.xml
   field: post
   content: true
 theme: obsidian
 theme_config:
+  page_titles:
+    categories: "分类"
+    tags: "标签"
+    archives: "归档"
+  descriptionOne: "凡事都要留几分"
+  descriptionTwo: "颜值是第一生产力"
+  avatar: http://davidz.cn/static/blog/img/avator.jpg
   socials:
     github: https://github.com/DavidZhang73
     twitter: https://twitter.com/david731998
@@ -107,16 +137,21 @@ theme_config:
     enable: false
   google_analytics: ''
   keywords: Developer, Python, C++, JavaScript, Java
+  # Use codemirror instead of highlight js for better colors
+  # if you want more language support check the modes list at official website
+  # modes see: https://codemirror.net/mode/
+  # see https://codemirror.net/
+  codemirror:
+    modes: ['javascript', 'css', 'xml', 'htmlmixed', 'clike', 'php', 'shell', 'python', 'cmake', 'powershell']
 
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: rsync
+  type: sftp
   host: davidz.cn
   user: root
-  root: /docker/blog/public/
+  pass: 199873abc
+  remotePath: /docker/blog/public/
   port: 22
-  delete: true
-  verbose: true
-  ignore_errors: false
+#  privateKey: ‪C:\Users\David\.ssh\id_rsa.ppk

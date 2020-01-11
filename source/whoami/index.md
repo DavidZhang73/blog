@@ -1,3 +1,5 @@
+<img src="http://davidz.cn/static/blog/img/avator.jpg" style="height: 100px; width: 100px; border-radius: 50%; margin-bottom: 30px" />
+
 #### 关于我 Who am I
 
 欢迎来到我的博客, 我是**DavidZ**, 
@@ -12,7 +14,7 @@ Advanced computing international student at AUN. Programmer and Pythonista.
   - [Django](https://www.djangoproject.com/)
   - [Flask](https://dormousehole.readthedocs.io/en/latest/)
 - C/CPP
-  - [CPP Micro Service](https://github.com/CppMicroServices/CppMicroServices)
+  - [CPP Micro Service](http://cppmicroservices.org/)
 - JavaScript
   - [Vue.js](https://cn.vuejs.org/)
 - Ada
@@ -28,5 +30,6 @@ Advanced computing international student at AUN. Programmer and Pythonista.
 
 - [建筑咨询管理系统](http://thugh.cn/) -- 山东威海建筑咨询管理系统
 
-  
+#### 感谢 Thanks
 
+感谢所有在建站过程中帮助过我的朋友们，以及博客Hexo和主题Obsidian的开发者，谢谢你们！
