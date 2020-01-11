@@ -1,11 +1,11 @@
-### blog.davidz.cn
+### [blog.davidz.cn](https://blog.davidz.cn)
 David's Blog based on Hexo.
 
 This is only a backup for the blog.
 
 ### TODO
-1. [ ] Add the Fluent Theme.
-2. [ ] First post.
+- [ ] Add the Fluent Theme.
+- [ ] First post.
 
 ### Thanks to
 1. [Hexo](https://github.com/hexojs/hexo)
