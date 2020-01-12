@@ -15,7 +15,7 @@ timezone: "Asia/Shanghai"
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://blog.davidz.cn
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :title/
 permalink_defaults:
 pretty_urls:
   trailing_index: false # Set to false to remove trailing index.html from permalinks
@@ -91,6 +91,11 @@ ignore:
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
+## Hexo site-map
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
 ### Markdown-it config
 ### Docs: https://github.com/celsomiranda/hexo-renderer-markdown-it/wiki
 markdown:
@@ -114,6 +119,7 @@ markdown:
     permalink: true
     permalinkClass: header-anchor
     permalinkSymbol: ¶
+
 ## Themes: https://hexo.io/themes/
 ### obsidian: https://github: com/TriDiamond/hexo-theme-obsidian:
 search:
@@ -133,8 +139,16 @@ theme_config:
     github: https://github.com/DavidZhang73
     twitter: https://twitter.com/david731998
     stackoverflow: https://stackoverflow.com/users/12693553/davidz
+  # Gitalk comment plugin
+  # see https://github.com/gitalk/gitalk
   gitalk:
-    enable: false
+    enable: true
+    autoExpand: true
+    clientID: '489076c5dd3f5ba13f67'
+    clientSecret: 'd6e3b245787b0b74d0dbe2639ef87f452a401194'
+    repo: 'blog.davidz.cn'
+    owner: 'DavidZhang73'
+    admin: 'DavidZhang73'
   google_analytics: ''
   keywords: Developer, Python, C++, JavaScript, Java
   # Use codemirror instead of highlight js for better colors
@@ -148,10 +162,4 @@ theme_config:
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: sftp
-  host: davidz.cn
-  user: root
-  pass: 199873abc
-  remotePath: /docker/blog/public/
-  port: 22
-#  privateKey: ‪C:\Users\David\.ssh\id_rsa.ppk
+
