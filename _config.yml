@@ -105,7 +105,7 @@ markdown:
     breaks: true
     linkify: true
     typographer: true
-    quotes: '“”‘’'
+    quotes: "“”‘’"
   plugins:
     - markdown-it-abbr
     - markdown-it-footnote
@@ -115,7 +115,7 @@ markdown:
     - markdown-it-emoji
   anchors:
     level: 2
-    collisionSuffix: 'v'
+    collisionSuffix: "v"
     permalink: true
     permalinkClass: header-anchor
     permalinkSymbol: ¶
@@ -144,22 +144,32 @@ theme_config:
   gitalk:
     enable: true
     autoExpand: true
-    clientID: '489076c5dd3f5ba13f67'
-    clientSecret: 'd6e3b245787b0b74d0dbe2639ef87f452a401194'
-    repo: 'blog.davidz.cn'
-    owner: 'DavidZhang73'
-    admin: 'DavidZhang73'
-  google_analytics: ''
+    clientID: "489076c5dd3f5ba13f67"
+    clientSecret: "d6e3b245787b0b74d0dbe2639ef87f452a401194"
+    repo: "blog.davidz.cn"
+    owner: "DavidZhang73"
+    admin: "DavidZhang73"
+  google_analytics: ""
   keywords: Developer, Python, C++, JavaScript, Java
   # Use codemirror instead of highlight js for better colors
   # if you want more language support check the modes list at official website
   # modes see: https://codemirror.net/mode/
   # see https://codemirror.net/
   codemirror:
-    modes: ['javascript', 'css', 'xml', 'htmlmixed', 'clike', 'php', 'shell', 'python', 'cmake', 'powershell']
-
+    modes:
+      [
+        "javascript",
+        "css",
+        "xml",
+        "htmlmixed",
+        "clike",
+        "php",
+        "shell",
+        "python",
+        "cmake",
+        "powershell",
+      ]
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-
