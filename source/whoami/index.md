@@ -2,13 +2,13 @@
 
 #### 关于我 Who am I
 
-欢迎来到我的博客, 我是**DavidZ**, 
-目前澳国立高级计算专业留学党一枚，喜欢编程，Python爱好者。
+欢迎来到我的博客, 我是**DavidZ**,
+目前澳国立高级计算专业留学党一枚，喜欢编程，Python 爱好者。
 
 Welcome to my blog, I am **DavidZ**
 Advanced computing international student at AUN. Programmer and Pythonista.
 
-#### 技术栈  Stack
+#### 技术栈 Stack
 
 - Python
   - [Django](https://www.djangoproject.com/)
@@ -22,7 +22,7 @@ Advanced computing international student at AUN. Programmer and Pythonista.
 
 #### 开源项目 Open Source Projects
 
-- [VJ](https://github.com/DavidZhang73/vj) -- 山东大学（威海）ACM Virtual Judge训练平台
+- [VJ](https://github.com/DavidZhang73/vj) -- 山东大学（威海）ACM Virtual Judge 训练平台
 - [Daty](https://github.com/DavidZhang73/daty) -- 数据库课程设计作业
 - [BookingService](http://git.davidz.cn/david/BookingService) -- 山东大学（威海）机电与信息工程学院竞赛预约系统
 
@@ -32,4 +32,4 @@ Advanced computing international student at AUN. Programmer and Pythonista.
 
 #### 感谢 Thanks
 
-感谢所有在建站过程中帮助过我的朋友们，以及博客Hexo和主题Obsidian的开发者，谢谢你们！
+感谢所有在建站过程中帮助过我的朋友们，以及博客 Hexo 和主题 Obsidian 的开发者，谢谢你们！
