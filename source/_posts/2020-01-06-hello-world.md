@@ -19,7 +19,7 @@ preview: 300
 给自己列一个简单的 TODO LIST 吧。
 
 - [x] 完善 BLOG
-- [ ] COMP2310 作业整理
+- [x] COMP2310 作业整理
 - [ ] 浪潮实习
 - [ ] 终端与 WSL
 
