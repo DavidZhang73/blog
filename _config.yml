@@ -173,3 +173,6 @@ theme_config:
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
+  type: git
+  repo: https://github.com/DavidZhang73/DavidZhang73.github.io
+  branch: [master]

@@ -312,4 +312,4 @@ Actual_Radius_Vector := 1.5 * Rotated_Radius_Vector;
 
 ## 感谢
 
-感谢所有在作业中帮助过我的同学，辅导员和老师。
+感谢所有在作业中帮助过我的同学，辅导员和老师:heart:。

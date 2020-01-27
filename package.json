@@ -6,7 +6,9 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "server": "hexo server --draft",
-    "deploy": "node tools/deploy.js",
+    "deploy": "hexo deploy",
+    "deploy-with-scp": "node tools/deploy-with-scp.js",
+    "deploy-with-git": "node tools/deploy-with-git.js",
     "upload": "node tools/upload.js"
   },
   "hexo": {
@@ -15,6 +17,7 @@
   "dependencies": {
     "hexo": "^4.2.0",
     "hexo-cli": "^3.1.0",
+    "hexo-deployer-git": "^2.1.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-baidu-sitemap": "^0.1.6",
     "hexo-generator-category": "^1.0.0",
