@@ -52,11 +52,12 @@ function restartNginx() {
  * 主函数
  */
 function main() {
-  hexoClean()
-  hexoGenerate()
-  deleteOldFile()
-  uploadNewFile()
-  restartNginx()
+  console.log('unsafe method')
+  // hexoClean()
+  // hexoGenerate()
+  // deleteOldFile()
+  // uploadNewFile()
+  // restartNginx()
 }
 
 main()
