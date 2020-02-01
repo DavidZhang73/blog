@@ -1,6 +1,6 @@
 const { realpathSync } = require('fs')
 const WORK_DIR = realpathSync(__dirname + '/../')
-const { startProcess, hexoDeploy } = require(WORK_DIR + '/tools/util.js')
+const { startProcess, hexoGenerate, hexoDeploy } = require(WORK_DIR + '/tools/util.js')
 const SSH = 'root@davidz.cn'
 
 /**
@@ -35,6 +35,7 @@ function restartNginx() {
  * 主函数
  */
 function main() {
+  hexoGenerate()
   hexoDeploy()
   remotePull()
   restartNginx()

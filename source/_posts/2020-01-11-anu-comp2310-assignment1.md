@@ -3,8 +3,8 @@ title: ANU COMP2310(2019) Assignment1
 categories:
   - Study
 tags:
+  - Ada
   - ANU
-  - COMP2310
 mp3: 'http://davidz.cn/static/blog/mp3/daiquan---qingshanbaiyun.mp3'
 cover: 'http://davidz.cn/static/blog/2020-01-11-anu-comp2310-assignment1/cover.png'
 preview: 300

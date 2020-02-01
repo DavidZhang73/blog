@@ -3,14 +3,14 @@ title: 浪潮实习
 categories:
   - Internship
 tags:
-  - Inspur
+  - Cpp
 preview: 300
 date: 2020-01-27 15:08:39
 mp3: http://davidz.cn/static/blog/mp3/linyoujia---chengquan.mp3
 cover: http://davidz.cn/static/blog/2020-01-27-inspur-internship/cover.jpg
 ---
 
-到了期末都说要找个实习的工作，“雷声大雨点小”，最后没几个真正去实习的:joy:。
+到了期末都说要找个实习的工作，我也跟个风:joy:。
 
 我是主要是在[实习僧](https://www.shixiseng.com/)上找的（就当免费做个广告吧），我住在美丽的泉城济南，~~这个地方好就好在~~，咳咳咳，我大概填了填简历，可能是没啥亮点，投了三四家都不要我:cry:。
 
@@ -206,7 +206,7 @@ vcpkg 安装依赖都是下载后现编译安装的，不过这个应该是 C/Cp
 
 同时因为是 C/Cpp 项目，我们编译了很多开源项目，算是终于知道了 Linux 根目录下面每个目录都是干啥的。
 
-Linux 下的包管理器比如 apt，yum 用起来也很爽。所以我也看了看 Windows 下面的包管理器，发现了 Scoop 这个神器，我准备把它，终端和 WSL 放在一起再写一篇博客。
+Linux 下的包管理器比如 apt，yum 用起来也很爽。所以我也看了看 Windows 下面的包管理器，发现了 Scoop 这个神器，我准备单独写一篇博客介绍它。
 
 ## [MSYS2](https://github.com/msys2/msys2)
 
