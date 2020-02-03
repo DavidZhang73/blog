@@ -1,24 +1,35 @@
 {
     "cSpell.words": [
+        "CCTR",
         "Fira",
         "Inspur",
+        "LGPL",
         "MSVC",
         "MSYS",
         "POSIX",
         "Prokopov",
+        "Sofer",
         "Vcpkg",
         "Zabbix",
         "bilibili",
+        "checkver",
         "cmake",
         "cmder",
+        "cpuz",
         "danmaku",
         "davidz",
         "eval",
         "guidgen",
+        "motrix",
+        "nirsoft",
         "nmake",
         "ohmyzsh",
+        "psutils",
         "pwsh",
         "qmake",
-        "systemctl"
+        "runat",
+        "snipaste",
+        "systemctl",
+        "winscp"
     ]
 }

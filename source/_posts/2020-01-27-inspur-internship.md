@@ -206,7 +206,7 @@ vcpkg 安装依赖都是下载后现编译安装的，不过这个应该是 C/Cp
 
 同时因为是 C/Cpp 项目，我们编译了很多开源项目，算是终于知道了 Linux 根目录下面每个目录都是干啥的。
 
-Linux 下的包管理器比如 apt，yum 用起来也很爽。所以我也看了看 Windows 下面的包管理器，发现了 Scoop 这个神器，我准备单独写一篇博客介绍它。
+Linux 下的包管理器比如 apt，yum 用起来也很爽。所以我也看了看 Windows 下面的包管理器，发现了 Scoop 这个神器，在另外一篇[博文](https://blog.davidz.cn/beauty-is-productivity-windows-terminal)里介绍了它。
 
 ## [MSYS2](https://github.com/msys2/msys2)
 

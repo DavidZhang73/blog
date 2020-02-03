@@ -259,3 +259,11 @@ eval $(dircolors -b $HOME/.dircolors)
 ```
 
 即可。
+
+## 推荐阅读
+
+[Dev on Windows with WSL](https://dowww.spencerwoo.com/) - 强烈推荐
+
+[5 个 PowerShell 主题，让你的 Windows 终端更好看](https://sspai.com/post/52907)
+
+[告别 Windows 终端的难看难用，从改造 PowerShell 的外观开始](https://sspai.com/post/52868)
