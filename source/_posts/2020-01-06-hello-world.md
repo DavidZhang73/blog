@@ -5,8 +5,8 @@ categories:
   - Personal
 tags:
   - Others
-mp3: http://davidz.cn/static/blog/mp3/delacey---dream-it-possible.mp3
-cover: http://davidz.cn/static/blog/2020-01-06-hello-world/cover.jpg
+mp3: //davidz.cn/static/blog/mp3/delacey---dream-it-possible.mp3
+cover: //davidz.cn/static/blog/2020-01-06-hello-world/cover.jpg
 preview: 300
 ---
 

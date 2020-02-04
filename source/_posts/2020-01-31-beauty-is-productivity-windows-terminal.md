@@ -8,25 +8,25 @@ tags:
   - Terminal
 preview: 300
 date: 2020-01-31 18:21:12
-mp3: http://davidz.cn/static/blog/mp3/chenyixun---hongmeigui.mp3
-cover: http://davidz.cn/static/blog/2020-01-31-beauty-is-productivity-windows-terminal/cover.jpg
+mp3: //davidz.cn/static/blog/mp3/chenyixun---hongmeigui.mp3
+cover: //davidz.cn/static/blog/2020-01-31-beauty-is-productivity-windows-terminal/cover.jpg
 ---
 
-![CMD](http://davidz.cn/static/blog/2020-01-31-beauty-is-productivity-windows-terminal/cmd.png)
+![CMD](//davidz.cn/static/blog/2020-01-31-beauty-is-productivity-windows-terminal/cmd.png)
 
 记得我最早的时候用 Visual Studio 写了第一个 Hello World 程序，激动的点运行，出来个黑框一闪就过去了，啥也没看到。
 
-![PowerShell](http://davidz.cn/static/blog/2020-01-31-beauty-is-productivity-windows-terminal/powershell.png)
+![PowerShell](//davidz.cn/static/blog/2020-01-31-beauty-is-productivity-windows-terminal/powershell.png)
 
 后来偶然了解 PowerShell，又变成了一个蓝色的框，还会有进度提示，红的，黑的，突兀得很:cry:。
 
-![bash](http://davidz.cn/static/blog/2020-01-31-beauty-is-productivity-windows-terminal/bash.png)
+![bash](//davidz.cn/static/blog/2020-01-31-beauty-is-productivity-windows-terminal/bash.png)
 
 后来上了大学终于在 Ubuntu 上见到了 bash，完全改变了我对 Shell 的认知。
 
 傻傻分不清 Shell 和 Terminal 的我，激动的打开 Git 自带的 bash，它却长成了这样。
 
-![Git-Bash](http://davidz.cn/static/blog/2020-01-31-beauty-is-productivity-windows-terminal/git-bash.png)
+![Git-Bash](//davidz.cn/static/blog/2020-01-31-beauty-is-productivity-windows-terminal/git-bash.png)
 
 一番优化之后也不是不能用，后来还入坑了 [Cmder](https://github.com/cmderdev/cmder)，用于替代 [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/) 那个更加原始的 terminal。
 
@@ -70,7 +70,7 @@ scoop install windows-terminal
 
 通过配置，最终 terminal 可以长成这个样子。
 
-![windows terminal](http://davidz.cn/static/blog/2020-01-31-beauty-is-productivity-windows-terminal/windows-terminal.png)
+![windows terminal](//davidz.cn/static/blog/2020-01-31-beauty-is-productivity-windows-terminal/windows-terminal.png)
 
 现阶段只有 json 格式的配置文件，还没有图形化配置界面，项目组说正式版会有，最终应该会与 Vscode 的配置一样。
 
@@ -200,11 +200,11 @@ Import-Module xxx
 
 这个是 oh-my-zsh 的 PowerShell 版本，但是只能管理主题。
 
-![robbyrussel](http://davidz.cn/static/blog/2020-01-31-beauty-is-productivity-windows-terminal/robbyrussel.png)
+![robbyrussel](//davidz.cn/static/blog/2020-01-31-beauty-is-productivity-windows-terminal/robbyrussel.png)
 
 我比较喜欢的是这个 robbyrussel 主题，因为比较简洁。
 
-![my-theme](http://davidz.cn/static/blog/2020-01-31-beauty-is-productivity-windows-terminal/my-theme.png)
+![my-theme](//davidz.cn/static/blog/2020-01-31-beauty-is-productivity-windows-terminal/my-theme.png)
 
 后来参考了[dotfiles](https://github.com/spencerwooo/dotfiles#powershell)，自己按照 oh-my-zsh 的 ys 主题魔改了一个，为了区分不同环境，我把最前面的符号改成了`PS`。
 

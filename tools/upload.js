@@ -48,7 +48,7 @@ function getPostAndDraftList () {
 
 function getMarkdown (name, pathname) {
   return `![${name}](${pathname.replace(REMOTE_DIR,
-    'http://davidz.cn/static/blog/')})`
+    '//davidz.cn/static/blog/')})`
 }
 
 function getFileUploadMap (post, fileList) {

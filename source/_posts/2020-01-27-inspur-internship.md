@@ -6,8 +6,8 @@ tags:
   - Cpp
 preview: 300
 date: 2020-01-27 15:08:39
-mp3: http://davidz.cn/static/blog/mp3/linyoujia---chengquan.mp3
-cover: http://davidz.cn/static/blog/2020-01-27-inspur-internship/cover.jpg
+mp3: //davidz.cn/static/blog/mp3/linyoujia---chengquan.mp3
+cover: //davidz.cn/static/blog/2020-01-27-inspur-internship/cover.jpg
 ---
 
 到了期末都说要找个实习的工作，我也跟个风:joy:。

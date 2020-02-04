@@ -134,7 +134,7 @@ theme_config:
     archives: "归档"
   descriptionOne: "凡事都要留几分"
   descriptionTwo: "颜值是第一生产力"
-  avatar: http://davidz.cn/static/blog/img/avator.jpg
+  avatar: //davidz.cn/static/blog/img/avator.jpg
   socials:
     github: https://github.com/DavidZhang73
     twitter: https://twitter.com/david731998
