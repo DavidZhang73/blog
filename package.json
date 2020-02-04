@@ -29,7 +29,7 @@
     "hexo-renderer-markdown-it": "^4.0.0",
     "hexo-renderer-stylus": "^1.1.0",
     "hexo-server": "^1.0.0",
-    "inquirer": "^7.0.3",
+    "inquirer": "^7.0.4",
     "markdown-it-emoji": "^1.4.0",
     "pinyin": "^2.9.0"
   }
