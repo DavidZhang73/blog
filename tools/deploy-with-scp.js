@@ -1,6 +1,6 @@
 const { realpathSync } = require('fs')
 const WORK_DIR = realpathSync(__dirname + '/../')
-const { startProcess, hexoClean, hexoGenerate } = require(WORK_DIR + '/tools/util.js')
+const { startProcess, hexoClean, hexoGenerate, pushBaiduSitemap } = require(WORK_DIR + '/tools/util.js')
 const SSH = 'root@davidz.cn'
 
 /**
@@ -55,6 +55,7 @@ function main() {
   console.log('unsafe method')
   // hexoClean()
   // hexoGenerate()
+  // pushBaiduSitemap()
   // deleteOldFile()
   // uploadNewFile()
   // restartNginx()

@@ -1,3 +1,5 @@
+const fs = require('fs')
+const request = require('request')
 const { spawnSync } = require('child_process')
 
 /**
@@ -60,9 +62,44 @@ function hexoDeploy() {
   startProcess(cmd, args, 'Hexo Deploy')
 }
 
+/**
+ * 从 public/baidusitemap.xml 中获取所有url
+ */
+function getUrlsFromXML() {
+  let urls = []
+  const xmlPath = "public/baidusitemap.xml"
+  let xml = fs.readFileSync(xmlPath, "utf-8")
+  const reg = /<loc>(.+)<\/loc>/g
+  while (res = reg.exec(xml)) {
+    urls.push(res[1])
+  }
+  return urls.join('\n')
+}
+
+/**
+ * 主送推送百度 Sitemap
+ */
+function pushBaiduSitemap() {
+  const url = 'http://data.zz.baidu.com/urls?site=https://blog.davidz.cn&token=chvBQnYZ7wDH8kgu'
+  // const postData = getUrlsFromXML()
+  var options = {
+    method: 'POST',
+    url: url,
+    headers: {
+      'Content-Type': 'text/plain'
+    },
+    body: getUrlsFromXML()
+  }
+  request(options, function (error, response) {
+    if (error) throw new Error(error)
+    console.log(`baidu sitemap: ${response.body}`)
+  })
+}
+
 module.exports = {
   startProcess,
   hexoClean,
   hexoGenerate,
-  hexoDeploy
+  hexoDeploy,
+  pushBaiduSitemap
 }
