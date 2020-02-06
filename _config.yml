@@ -113,6 +113,7 @@ markdown:
     - markdown-it-sub
     - markdown-it-sup
     - markdown-it-emoji
+    - markdown-it-task-lists
   anchors:
     level: 2
     collisionSuffix: "v"

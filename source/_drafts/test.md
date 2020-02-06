@@ -8,6 +8,30 @@ preview: 300
 date: 2000-01-01 12:00:00
 ---
 
+## math test
+
+$a+b=c$
+
+$$
+a+b=c \\
+b+d=e
+$$
+
+$$
+\begin{align}
+L&=\sum_{n=1}^N \sum_{k=1}^K r_{nk} ||\textbf{x}_n - \mu_k||_2^2 \\
+&=\sum_{n=1}^N \sum_{k=1}^K r_{nk} (\textbf{x}_n - \mu_k)^2 \\
+&=\sum_{n=1}^N \sum_{k=1}^K r_{nk} (\textbf{x}_n^2 - 2\textbf{x}_n{\mu}_k + \mu_k^2) \\
+\frac{\partial L}{\partial \mu_k}&=\sum_{n=1}^N \sum_{k=1}^K r_{nk} (-2\textbf{x}_n + 2\mu_k) \\
+let \ \frac{\partial L}{\partial \mu_k}&=0 \\
+\sum_{n=1}^N \sum_{k=1}^K 2\textbf{x}_n r_{nk}&=\sum_{n=1}^N \sum_{k=1}^K 2\mu_k r_{nk} \\
+\sum_{n=1}^N \sum_{k=1}^K \textbf{x}_n r_{nk}&=\sum_{n=1}^N \sum_{k=1}^K \mu_k r_{nk} \\
+\text{for a specific} \ k,& \\
+\sum_{n=1}^N \textbf{x}_n r_{nk}&=\sum_{n=1}^N \mu_k r_{nk} \\
+\mu_k&=\frac{\sum_{n=1}^N \textbf{x}_n r_{nk}}{\sum_{n=1}^N r_{nk}}
+\end{align}
+$$
+
 ## h1 Heading 8-)
 
 ## h2 Heading
