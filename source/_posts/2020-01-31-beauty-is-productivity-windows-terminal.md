@@ -4,7 +4,7 @@ categories:
   - Productivity
 tags:
   - Open-Source
-  - Microsoft
+  - Windows
   - Terminal
 preview: 300
 date: 2020-01-31 18:21:12

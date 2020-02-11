@@ -4,6 +4,8 @@ categories:
   - Internship
 tags:
   - Cpp
+  - Windows
+  - Linux
 preview: 300
 date: 2020-01-27 15:08:39
 mp3: //davidz.cn/static/blog/mp3/linyoujia---chengquan.mp3

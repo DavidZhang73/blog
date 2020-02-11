@@ -19,18 +19,26 @@
         "cpuz",
         "danmaku",
         "davidz",
+        "disasm",
         "eval",
         "guidgen",
+        "lironghao",
+        "maque",
+        "mhook",
         "motrix",
+        "mowenwei",
         "nirsoft",
         "nmake",
         "ohmyzsh",
+        "printf",
         "psutils",
         "pwsh",
         "qmake",
         "runat",
         "snipaste",
         "systemctl",
-        "winscp"
+        "uninstallation",
+        "winscp",
+        "yintian"
     ]
 }
