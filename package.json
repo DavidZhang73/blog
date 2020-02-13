@@ -5,11 +5,12 @@
   "scripts": {
     "build": "hexo generate",
     "clean": "hexo clean",
-    "server": "hexo server --draft",
     "deploy": "hexo deploy",
+    "server": "hexo server --draft",
+    "upload": "node tools/upload.js",
+    "mozjpeg": "node tools/mozjpeg.js",
     "deploy-with-scp": "node tools/deploy-with-scp.js",
-    "deploy-with-git": "node tools/deploy-with-git.js",
-    "upload": "node tools/upload.js"
+    "deploy-with-git": "node tools/deploy-with-git.js"
   },
   "hexo": {
     "version": "4.2.0"
