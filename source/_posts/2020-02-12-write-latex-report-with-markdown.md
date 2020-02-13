@@ -1,5 +1,5 @@
 ---
-title: 使用 Markdown 编写 Latex 报告
+title: 使用 Markdown 编写基于 Latex 的 PDF 报告
 categories:
   - Productivity
 tags:
@@ -21,7 +21,7 @@ cover: //davidz.cn/static/blog/2020-02-12-write-latex-report-with-markdown/cover
 
 [eisvogel 主题样例](https://github.com/Wandmalfarbe/pandoc-latex-template/#example-images)
 
-你也可以从这里看一下我的[成果](//davidz.cn/static/blog/2020-02-12-write-latex-report-with-markdown/report.pdf)作为参考，我觉得完全符合我的要求。
+你也可以从[这里](//davidz.cn/static/blog/2020-02-12-write-latex-report-with-markdown/report.pdf)看一下我的成果作为参考，我觉得完全符合我的要求。
 
 ## 思路
 
@@ -131,7 +131,7 @@ subfigGrid: true
 ---
 ```
 
-在每个 Markdown 文件最上面形如上面 YAML 代码的叫做 YAML Front Matter，可以理解为对全文的配置。这里主要是一些对[Pandoc 的配置](https://www.pandoc.org/MANUAL.html#variables)以及对[Eisvogel 主题的配置](https://github.com/Wandmalfarbe/pandoc-latex-template#custom-template-variables)。
+在每个 Markdown 文件最上面形如上面 YAML 代码的叫做`YAML Front Matter`，可以理解为对全文的配置。这里主要是一些对[Pandoc 的配置](https://www.pandoc.org/MANUAL.html#variables)以及对[Eisvogel 主题的配置](https://github.com/Wandmalfarbe/pandoc-latex-template#custom-template-variables)。
 
 ## 生成
 
