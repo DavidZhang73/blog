@@ -81,6 +81,7 @@ function getUrlsFromXML() {
  * 主送推送百度 Sitemap
  */
 function pushBaiduSitemap() {
+  console.log('Baidu Sitemap Push:')
   const url = 'http://data.zz.baidu.com/urls?site=https://blog.davidz.cn&token=chvBQnYZ7wDH8kgu'
   // const postData = getUrlsFromXML()
   var options = {
