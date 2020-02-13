@@ -42,13 +42,22 @@ function restartNginx() {
  * 主函数
  */
 function main() {
-  hexoGenerate()
-  pushBaiduSitemap()
-  hexoDeploy()
-  remotePull()
-  restartNginx()
-  gitCommit()
-  gitPush()
+  const taskList = [
+    hexoGenerate,
+    pushBaiduSitemap,
+    hexoDeploy,
+    remotePull,
+    restartNginx,
+    gitCommit,
+    gitPush
+  ]
+  const len = taskList.length
+  for (let i = 0; i < len; i++) {
+    console.log('**************************************************')
+    console.log(`当前: ${i + 1} / ${len}`)
+    taskList[i]()
+    console.log('**************************************************')
+  }
 }
 
 main()
