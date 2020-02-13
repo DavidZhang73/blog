@@ -60,14 +60,16 @@ function restartNginx() {
  */
 function main() {
   console.log('unsafe method')
-  // hexoClean()
-  // hexoGenerate()
-  // pushBaiduSitemap()
-  // deleteOldFile()
-  // uploadNewFile()
-  // restartNginx()
-  // gitCommit()
-  // gitPush()
+  // executeTaskList([
+  //   hexoClean,
+  //   hexoGenerate,
+  //   pushBaiduSitemap,
+  //   deleteOldFile,
+  //   uploadNewFile,
+  //   restartNginx,
+  //   gitCommit,
+  //   gitPush
+  // ])
 }
 
 main()

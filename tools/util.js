@@ -125,6 +125,20 @@ function gitPush() {
   startProcess(cmd, args, 'Git Push')
 }
 
+/**
+ * 执行任务函数列表
+ * @param taskList 任务函数列表
+ */
+function executeTaskList(taskList) {
+  const len = taskList.length
+  for (let i = 0; i < len; i++) {
+    console.log('**************************************************')
+    console.log(`当前: ${i + 1} / ${len}`)
+    taskList[i]()
+    console.log('**************************************************')
+  }
+}
+
 module.exports = {
   startProcess,
   hexoClean,
@@ -132,5 +146,6 @@ module.exports = {
   hexoDeploy,
   pushBaiduSitemap,
   gitCommit,
-  gitPush
+  gitPush,
+  executeTaskList
 }

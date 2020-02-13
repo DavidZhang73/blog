@@ -6,7 +6,8 @@ const {
   hexoDeploy,
   pushBaiduSitemap,
   gitCommit,
-  gitPush
+  gitPush,
+  executeTaskList
 } = require(WORK_DIR + '/tools/util.js')
 const SSH = 'root@davidz.cn'
 
@@ -42,7 +43,7 @@ function restartNginx() {
  * 主函数
  */
 function main() {
-  const taskList = [
+  executeTaskList([
     hexoGenerate,
     pushBaiduSitemap,
     hexoDeploy,
@@ -50,14 +51,7 @@ function main() {
     restartNginx,
     gitCommit,
     gitPush
-  ]
-  const len = taskList.length
-  for (let i = 0; i < len; i++) {
-    console.log('**************************************************')
-    console.log(`当前: ${i + 1} / ${len}`)
-    taskList[i]()
-    console.log('**************************************************')
-  }
+  ])
 }
 
 main()
