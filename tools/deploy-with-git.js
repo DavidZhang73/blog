@@ -1,6 +1,13 @@
 const { realpathSync } = require('fs')
 const WORK_DIR = realpathSync(__dirname + '/../')
-const { startProcess, hexoGenerate, hexoDeploy, pushBaiduSitemap } = require(WORK_DIR + '/tools/util.js')
+const {
+  startProcess,
+  hexoGenerate,
+  hexoDeploy,
+  pushBaiduSitemap,
+  gitCommit,
+  gitPush
+} = require(WORK_DIR + '/tools/util.js')
 const SSH = 'root@davidz.cn'
 
 /**
@@ -40,6 +47,8 @@ function main() {
   hexoDeploy()
   remotePull()
   restartNginx()
+  gitCommit()
+  gitPush()
 }
 
 main()

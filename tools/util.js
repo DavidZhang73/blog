@@ -1,6 +1,7 @@
 const fs = require('fs')
 const request = require('request')
 const { spawnSync } = require('child_process')
+const moment = require('moment')
 
 /**
  * 运行一个进程
@@ -96,10 +97,39 @@ function pushBaiduSitemap() {
   })
 }
 
+/**
+ * git commit
+ */
+function gitCommit() {
+  const cmd = 'git'
+  const args = [
+    'commit',
+    '-a',
+    '-m',
+    moment().format('YYYY-MM-DD')
+  ]
+  startProcess(cmd, args, 'Git Comment')
+}
+
+/**
+ * git push
+ */
+function gitPush() {
+  const cmd = 'git'
+  const args = [
+    'push',
+    'origin',
+    'master'
+  ]
+  startProcess(cmd, args, 'Git Push')
+}
+
 module.exports = {
   startProcess,
   hexoClean,
   hexoGenerate,
   hexoDeploy,
-  pushBaiduSitemap
+  pushBaiduSitemap,
+  gitCommit,
+  gitPush
 }
