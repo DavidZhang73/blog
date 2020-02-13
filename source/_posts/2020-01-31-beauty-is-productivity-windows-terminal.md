@@ -12,6 +12,8 @@ mp3: //davidz.cn/static/blog/mp3/chenyixun---hongmeigui.mp3
 cover: //davidz.cn/static/blog/2020-01-31-beauty-is-productivity-windows-terminal/cover.jpg
 ---
 
+## 回顾
+
 ![CMD](//davidz.cn/static/blog/2020-01-31-beauty-is-productivity-windows-terminal/cmd.png)
 
 记得我最早的时候用 Visual Studio 写了第一个 Hello World 程序，激动的点运行，出来个黑框一闪就过去了，啥也没看到。

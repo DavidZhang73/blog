@@ -12,6 +12,8 @@ mp3: //davidz.cn/static/blog/mp3/linyoujia---chengquan.mp3
 cover: //davidz.cn/static/blog/2020-01-27-inspur-internship/cover.jpg
 ---
 
+## 前言
+
 到了期末都说要找个实习的工作，我也跟个风:joy:。
 
 我是主要是在[实习僧](https://www.shixiseng.com/)上找的（就当免费做个广告吧），我住在美丽的泉城济南，~~这个地方好就好在~~，咳咳咳，我大概填了填简历，可能是没啥亮点，投了三四家都不要我:cry:。

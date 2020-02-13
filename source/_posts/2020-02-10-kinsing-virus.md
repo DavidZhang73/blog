@@ -9,8 +9,10 @@ tags:
 preview: 300
 date: 2020-02-10 17:20:49
 mp3: //davidz.cn/static/blog/mp3/lironghao---maque.mp3
-cover: //davidz.cn/static/blog/2020-02-10-kinsing-virus/netdata.png
+cover: //davidz.cn/static/blog/2020-02-10-kinsing-virus/cover.jpg
 ---
+
+## 前言
 
 2020 年开年不顺，2019 新型冠状病毒肺炎爆发，从年三十居家隔离到了正月十五，没想到自己的服务器也”感染“上了病毒 - Kinsing(进程的名字，姑且这样称呼)。
 

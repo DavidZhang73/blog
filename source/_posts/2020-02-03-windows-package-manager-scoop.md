@@ -11,6 +11,8 @@ mp3: //davidz.cn/static/blog/mp3/wangsulong-_-by2---youdiantian.mp3
 cover: //davidz.cn/static/blog/2020-02-03-windows-package-manager-scoop/cover.png
 ---
 
+## 前言
+
 一直以来，作为开发者，Windows 相较于 Linux 都缺少两样重要的工具，
 
 1. **好用**的 Shell - 现在可以用 PowerShell Core 或者 WSL 暂时代替。

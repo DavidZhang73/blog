@@ -15,6 +15,8 @@ date: 2020-01-11 18:04:26
 >
 > <div style="color: red">本博客请供参考，请不要抄袭。</div>
 
+## 前言
+
 这是 ANU [COMP2310](http://courses.cecs.anu.edu.au/courses/COMP2310/)的第一次大作业，历时一个月左右，也是这个学期我写的最认真的一次作业，所以在博客搭建伊始，我先把这个记录下来。
 
 ## 问题

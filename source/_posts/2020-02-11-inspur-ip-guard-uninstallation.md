@@ -7,8 +7,10 @@ tags:
 preview: 300
 date: 2020-02-11 17:07:43
 mp3: //davidz.cn/static/blog/mp3/mowenwei---yintian.mp3
-cover: //davidz.cn/static/blog/2020-02-11-inspur-ip-guard-uninstallation/ip-guard.jpg
+cover: //davidz.cn/static/blog/2020-02-11-inspur-ip-guard-uninstallation/cover.svg
 ---
+
+## 前言
 
 > 屋漏更遭连夜雨，船迟又遇打头风。
 
