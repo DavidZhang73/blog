@@ -1,5 +1,5 @@
 ---
-title: 使用 Markdown 编写基于 Latex 的 PDF 报告
+title: 使用 Markdown 编写基于 Latex 的报告
 categories:
   - Productivity
 tags:

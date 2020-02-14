@@ -1,5 +1,5 @@
 ---
-title: ANU COMP2310(2019) Assignment1
+title: ANU COMP2310(2019) Assignment 1
 categories:
   - Study
 tags:
