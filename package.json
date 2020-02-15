@@ -10,7 +10,8 @@
     "upload": "node tools/upload.js",
     "mozjpeg": "node tools/mozjpeg.js",
     "deploy-with-scp": "node tools/deploy-with-scp.js",
-    "deploy-with-git": "node tools/deploy-with-git.js"
+    "deploy-with-git": "node tools/deploy-with-git.js",
+    "util-test": "node tools/util.js"
   },
   "hexo": {
     "version": "4.2.0"
@@ -36,6 +37,6 @@
     "markdown-it-task-lists": "^2.1.1",
     "moment": "^2.24.0",
     "pinyin": "^2.9.0",
-    "request": "^2.88.0"
+    "superagent": "^5.2.1"
   }
 }

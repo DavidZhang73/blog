@@ -1,5 +1,5 @@
 const fs = require('fs')
-const request = require('request')
+const superagent = require('superagent')
 const { spawnSync } = require('child_process')
 const moment = require('moment')
 
@@ -84,18 +84,17 @@ function pushBaiduSitemap() {
   console.log('Baidu Sitemap Push:')
   const url = 'http://data.zz.baidu.com/urls?site=https://blog.davidz.cn&token=chvBQnYZ7wDH8kgu'
   // const postData = getUrlsFromXML()
-  var options = {
-    method: 'POST',
-    url: url,
-    headers: {
-      'Content-Type': 'text/plain'
-    },
-    body: getUrlsFromXML()
-  }
-  request(options, function (error, response) {
-    if (error) throw new Error(error)
-    console.log(`baidu sitemap: ${response.body}`)
-  })
+  superagent
+    .post(url)
+    .set({ 'Content-Type': 'text/plain' })
+    .send(getUrlsFromXML())
+    .end((err, res) => {
+      if (err) {
+        throw new Error(err)
+      } else {
+        console.log(`baidu sitemap: ${res.text}`)
+      }
+    })
 }
 
 /**
