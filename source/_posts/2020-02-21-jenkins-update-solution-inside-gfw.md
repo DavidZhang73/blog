@@ -18,7 +18,7 @@ cover: //davidz.cn/static/blog/2020-02-21-jenkins-update-solution-inside-gfw/int
 
 ![下载超时](//davidz.cn/static/blog/2020-02-21-jenkins-update-solution-inside-gfw/intro.png)
 
-根据经验，国外这些软件下载失败基本上都是因为链接不上服务器，换个源就好了。所以简单百度，找到大量相关教程，换了[清华源](https://mirrors.tuna.tsinghua.edu.cn/)在内的四五个国内的源，均无效。
+根据经验，国外这些软件下载失败基本上都是因为链接不上服务器，换个源就好了。所以简单百度，找到大量相关教程，换了[清华源](https://mirrors.tuna.tsinghua.edu.cn/)在内的四五个镜像源，均无效。
 
 这就非常奇怪了，所以我打开了清华源的[update-center.json](https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json)，仔细看了看，发现了蹊跷之处。原来，这个文件里面基本上所有插件的链接都指向了官网链接`http://updates.jenkins-ci.org/download/plugins/`。所以我们使用`https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json`只加速了下载这个文件的过程，而并没有加速下载插件的过程。
 
