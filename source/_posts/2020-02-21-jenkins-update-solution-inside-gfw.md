@@ -10,6 +10,8 @@ mp3: //davidz.cn/static/blog/mp3/guangliang---tonghua.mp3
 cover: //davidz.cn/static/blog/2020-02-21-jenkins-update-solution-inside-gfw/intro.png
 ---
 
+> 原创发表于 [DavidZ Blog](https://blog.davidz.cn)，遵循 [CC 4.0 BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode) 版权协议，转载请附上原文出处链接及本声明。
+
 ## 前言
 
 闲来无聊，在家折腾 DevOps，第一步当然是部署一个 Jenkins 啦，然而一顿操作猛如虎，插件一个都下载不下来，总不能给 Jenkins 加个代理吧，所以有了下面这一通折腾。

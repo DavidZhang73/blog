@@ -12,6 +12,8 @@ mp3: //davidz.cn/static/blog/mp3/lironghao---maque.mp3
 cover: //davidz.cn/static/blog/2020-02-10-kinsing-virus/cover.jpg
 ---
 
+> 原创发表于 [DavidZ Blog](https://blog.davidz.cn)，遵循 [CC 4.0 BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode) 版权协议，转载请附上原文出处链接及本声明。
+
 ## 前言
 
 2020 年开年不顺，2019 新型冠状病毒肺炎爆发，从年三十居家隔离到了正月十五，没想到自己的服务器也”感染“上了病毒 - Kinsing(进程的名字，姑且这样称呼)。

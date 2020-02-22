@@ -11,6 +11,8 @@ mp3: //davidz.cn/static/blog/mp3/huozun---juanzhulian.mp3
 cover: //davidz.cn/static/blog/2020-02-12-write-latex-report-with-markdown/cover.jpg
 ---
 
+> 原创发表于 [DavidZ Blog](https://blog.davidz.cn)，遵循 [CC 4.0 BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode) 版权协议，转载请附上原文出处链接及本声明。
+
 ## 前言
 
 计算机这个专业，有很多报告要做。在山威的时候，报告格式没有什么限制 Word，PDF 都可以，那个时候我开始使用 Markdown 作为我的排版工具，因为实在是没有时间经历去研究 Word 的各种高级功能（~~主要是懒~~）。Markdown 十分简单，易学，在[Github](https://github.com)等计算机专业相关平台使用也非常广泛，还可以通过各种模板快速生成**好看**，**美观**，**专业**的文档。

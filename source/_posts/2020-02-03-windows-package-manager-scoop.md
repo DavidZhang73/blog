@@ -11,6 +11,8 @@ mp3: //davidz.cn/static/blog/mp3/wangsulong-_-by2---youdiantian.mp3
 cover: //davidz.cn/static/blog/2020-02-03-windows-package-manager-scoop/cover.png
 ---
 
+> 原创发表于 [DavidZ Blog](https://blog.davidz.cn)，遵循 [CC 4.0 BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode) 版权协议，转载请附上原文出处链接及本声明。
+
 ## 前言
 
 一直以来，作为开发者，Windows 相较于 Linux 都缺少两样重要的工具，

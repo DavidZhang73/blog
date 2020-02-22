@@ -10,6 +10,8 @@ mp3: //davidz.cn/static/blog/mp3/mowenwei---yintian.mp3
 cover: //davidz.cn/static/blog/2020-02-11-inspur-ip-guard-uninstallation/cover.svg
 ---
 
+> 原创发表于 [DavidZ Blog](https://blog.davidz.cn)，遵循 [CC 4.0 BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode) 版权协议，转载请附上原文出处链接及本声明。
+
 ## 前言
 
 > 屋漏更遭连夜雨，船迟又遇打头风。
