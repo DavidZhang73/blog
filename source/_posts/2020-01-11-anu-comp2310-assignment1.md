@@ -15,7 +15,7 @@ date: 2020-01-11 18:04:26
 
 > **敬告**
 >
-> <div style="color: red">本博客请供参考，请不要抄袭。</div>
+> <div style="color: red">本博客仅供参考，请不要抄袭。</div>
 
 ## 前言
 
