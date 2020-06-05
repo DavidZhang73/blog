@@ -168,7 +168,7 @@ theme_config:
         "python",
         "cmake",
         "powershell",
-        "yaml"
+        "yaml",
       ]
 
 # Deployment
