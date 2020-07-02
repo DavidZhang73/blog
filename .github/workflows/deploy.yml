@@ -36,4 +36,4 @@ jobs:
 
     - name: Deploy
       run: |
-        node ./tools/deploy-with-scp.js
+        node ./tools/deploy-with-git.js
