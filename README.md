@@ -1,10 +1,14 @@
-### [blog.davidz.cn](https://blog.davidz.cn)
+<div align="center">
 
-David's Blog based on Hexo.
+# [Blog - DavidZ](https://blog.davidz.cn)
 
-This is only a backup for the blog.
+_David's Blog based on Hexo._
 
-### Thanks to
+![Deploy](https://github.com/DavidZhang73/blog.davidz.cn/workflows/Deploy/badge.svg)
+
+</div>
+
+## Thanks to
 
 1. [Hexo](https://github.com/hexojs/hexo)
 2. [Obsidian](https://github.com/TriDiamond/hexo-theme-obsidian)
