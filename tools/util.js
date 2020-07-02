@@ -25,9 +25,8 @@ function startProcess(cmd, args, name, stdio) {
  * Hexo Clean
  */
 function hexoClean() {
-  const cmd = 'node'
+  const cmd = 'npm'
   const args = [
-    'E:\\Lang\\js\\node\\node_modules\\npm\\bin\\npm-cli.js',
     'run',
     'clean',
     '--scripts-prepend-node-path=auto',
@@ -39,9 +38,8 @@ function hexoClean() {
  * Hexo Generate
  */
 function hexoGenerate() {
-  const cmd = 'node'
+  const cmd = 'npm'
   const args = [
-    'E:\\Lang\\js\\node\\node_modules\\npm\\bin\\npm-cli.js',
     'run',
     'build',
     '--scripts-prepend-node-path=auto',
@@ -53,9 +51,8 @@ function hexoGenerate() {
  * Hexo Deploy
  */
 function hexoDeploy() {
-  const cmd = 'node'
+  const cmd = 'npm'
   const args = [
-    'E:\\Lang\\js\\node\\node_modules\\npm\\bin\\npm-cli.js',
     'run',
     'deploy',
     '--scripts-prepend-node-path=auto',
@@ -78,7 +75,7 @@ function getUrlsFromXML() {
 }
 
 /**
- * 主送推送百度 Sitemap
+ * 主动送推送百度 Sitemap
  */
 function pushBaiduSitemap() {
   console.log('Baidu Sitemap Push:')
