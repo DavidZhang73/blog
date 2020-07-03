@@ -4,8 +4,6 @@
 
 _David's Blog based on Hexo._
 
-![Deploy](https://github.com/DavidZhang73/blog.davidz.cn/workflows/Deploy/badge.svg)
-
 </div>
 
 ## Thanks to
