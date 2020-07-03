@@ -1,0 +1,4 @@
+[submodule "themes/obsidian"]
+	path = themes/obsidian
+	url = https://github.com/DavidZhang73/hexo-theme-obsidian.git
+
