@@ -55,9 +55,10 @@ cover: //davidz.cn/static/blog/2020-02-12-write-latex-report-with-markdown/cover
 
 虽然 `VSCode` 原生支持 Markdown，但是下面这几个属于增强型插件：
 
-1. `Markdown Preview Enhanced`，增强对 Markdown 的预览。
-2. `Code Spell Checker`，检查你报告里的拼写错误（不过只支持英文）。
-3. `Markdownlint`，检查 Markdown 的语法规范（强迫症专属）。
+1. [`Markdown Preview Enhanced`](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)，增强 Markdown 的预览效果，比如支持公式，清单之类的。
+2. [`Code Spell Checker`](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)，检查你报告里的拼写错误（不过好像只支持英文）。
+3. [`Markdownlint`](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)，检查 Markdown 的语法规范（强迫症专属）。
+4. [`Prettier`](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)，格式化 Markdown 代码（强迫症专属）。
 
 #### 选项 2: Typora
 
@@ -90,6 +91,8 @@ scoop install latex
 
 ### Pandoc
 
+#### Pandoc 主程序
+
 这个就是前文所说的万能文档格式转换器软件了。
 
 通过 Scoop 安装：
@@ -100,40 +103,136 @@ scoop install pandoc
 
 或者[官网](https://www.pandoc.org/)下载安装。
 
-用到的过滤器（类似于插件）：
+#### Pandoc Filter
 
-1. [pandoc-crossref](https://github.com/lierdakil/pandoc-crossref)，用于 pandoc 中的交叉引用，图片，公式，章节等，这个我也是用 Scoop 安装的，没有 Scoop 的话看看[安装教程](https://github.com/lierdakil/pandoc-crossref#installation)吧。
+Pandoc 支持自定义[过滤器](https://www.pandoc.org/filters.html)，类似于插件，支持 Lua, Haskell, Python(对于想要自己尝试开发的同学，强烈推荐[Panflute](https://github.com/sergiocorreia/panflute)，比官方的[pandocfilters](https://github.com/jgm/pandocfilters)更人性化一些)。
 
-### Eisvogel 主题
+##### 原理
+
+```
+INPUT --> reader --> AST --> filter --> AST --> writer --> OUTPUT
+```
+
+- INPUT: Pandoc 的输入。
+- reader: 把输入解析成 AST。
+- AST(Abstract Syntax Tree): 抽象语法树，这个是 Pandoc 的核心组件，是对所有支持的文件类型的抽象。
+- filter: 这里就是我们的过滤器了，注意他的输入和输出都是 AST。
+- writer: 把 AST 解析成输出。
+- OUTPUT: Pandoc 的输出。
+
+##### 例子
+
+上调所有小于 6 的标题的级别，如果大于 6，则删除标题（把标题变成段落）。
+
+```python
+from panflute import *
+
+def increase_header_level(elem, doc):
+    if type(elem) == Header:
+        if elem.level < 6:
+            elem.level += 1
+        else:
+            return [] #  Delete headers already in level 6
+
+def main(doc=None):
+    return run_filter(increase_header_level, doc=doc)
+
+if __name__ == "__main__":
+    main()
+```
+
+然后在 Pandoc 的命令中用`--filter`指定这个 Python 文件即可。
+
+##### 推荐
+
+- [pandoc-crossref](https://github.com/lierdakil/pandoc-crossref)
+
+用于 Pandoc 中的交叉引用，图片，公式，章节等，这个我也是用 Scoop 安装的，没有 Scoop 的话看看[安装教程](https://github.com/lierdakil/pandoc-crossref#installation)吧。
+
+|                                  类型                                   |                    标识                    |     引用     |
+| :---------------------------------------------------------------------: | :----------------------------------------: | :----------: |
+|    [图片](http://lierdakil.github.io/pandoc-crossref/#image-labels)     | `![Caption](file.ext){{ '{#fig:label}' }}` | `@fig:label` |
+|   [公式](http://lierdakil.github.io/pandoc-crossref/#equation-labels)   |      `$$ math $$ {{ '{#eq:label}' }}`      | `@eq:label`  |
+|    [表格](http://lierdakil.github.io/pandoc-crossref/#table-labels)     |      `: Caption {{ '{#tbl:label}' }}`      | `@tbl:label` |
+|   [段落](http://lierdakil.github.io/pandoc-crossref/#section-labels)    |      `# Section {{ '{#sec:label}' }}`      | `@sec:label` |
+| [代码块](http://lierdakil.github.io/pandoc-crossref/#code-block-labels) |  `: Listing caption {{ '{#lst:label}' }}`  | `@lst:label` |
+
+- [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc)
+
+用于 Pandoc 中的文献引用，这个是自带的，无需安装。
+
+需要指定 BibTeX(.bib) 文件来指定你的参考源，长这个样子，
+
+```bibtex
+@article{vinyals_show_2015,
+	title = {Show and Tell: A Neural Image Caption Generator},
+	url = {http://arxiv.org/abs/1411.4555},
+	shorttitle = {Show and Tell},
+	abstract = {Automatically describing the content of an image is a fundamental problem in artiďŹcial intelligence that connects computer vision and natural language processing. In this paper, we present a generative model based on a deep recurrent architecture that combines recent advances in computer vision and machine translation and that can be used to generate natural sentences describing an image. The model is trained to maximize the likelihood of the target description sentence given the training image. Experiments on several datasets show the accuracy of the model and the ďŹuency of the language it learns solely from image descriptions. Our model is often quite accurate, which we verify both qualitatively and quantitatively. For instance, while the current state-of-the-art {BLEU}-1 score (the higher the better) on the Pascal dataset is 25, our approach yields 59, to be compared to human performance around 69. We also show {BLEU}-1 score improvements on Flickr30k, from 56 to 66, and on {SBU}, from 19 to 28. Lastly, on the newly released {COCO} dataset, we achieve a {BLEU}-4 of 27.7, which is the current state-of-the-art.},
+	journaltitle = {{arXiv}:1411.4555 [cs]},
+	author = {Vinyals, Oriol and Toshev, Alexander and Bengio, Samy and Erhan, Dumitru},
+	urldate = {2020-06-01},
+	date = {2015-04-20},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1411.4555},
+	keywords = {Computer Science - Computer Vision and Pattern Recognition}
+}
+```
+
+以及 Citation Style Language(.csl)文件来指定你想要的引用格式，比如 APA，MLA，Chicago，Harvard 或者国内常用的 GB7714-2005，可以从[citation-style-language/styles](https://github.com/citation-style-language/styles)下载。
+
+在文中用`[@vinyals_show_2015]`对应引用源即可实现引用自动生成，十分方便。
+
+#### Pandoc Theme: Eisvogel 主题
 
 ![Eisvogel](//davidz.cn/static/blog/2020-02-12-write-latex-report-with-markdown/eisvogel.png)
 
 这个是我找到的计算机专业风格的论文/报告/书籍/幻灯片的开源模板，对于我来说是真的很合适了，美观，简约又专业。
 
-[Github Release](https://github.com/Wandmalfarbe/pandoc-latex-template)下载，放到[指定路径](https://github.com/Wandmalfarbe/pandoc-latex-template#installation)就完了，很简单。
+[Github Release](https://github.com/Wandmalfarbe/pandoc-latex-template)下载，放到[指定路径](https://github.com/Wandmalfarbe/pandoc-latex-template#installation)，就完了，很简单。
 
 ## 配置
 
 ```YAML
 ---
-title: COMP 2310 Assignment 1 Report
-author: Jiahao Zhang U6921098
-date: Sept. 27, 2019
+# Pandoc
+title: Title of the Report
+author: Jiahao Zhang
+date: Jul. 3, 1998
+block-headings: true
 documentclass: article
 papersize: a4
-geometry: margin=2cm
+geometry: margin=2.5cm
 mainfont: Calibri
+sansfont: Calibri
+monofont: JetBrains Mono
+CJKmainfont: Microsoft YaHei
 fontsize: 10pt
-titlepage: true
-header-right: Jiahao Zhang U6921098
-footer-left: Australian National University
-autoSectionLabels: true
 listings: true
+toc: true
+toc-depth: 2
+secnumdepth: 4
+bibliography: [resources.bib]
+csl: ieee.csl
+# Eisvogel
+titlepage: true
+header-right: Report
+footer-left: Australian National University
+toc-own-page: true
+table-use-row-colors: false
+listings-no-page-break: false
+code-block-font-size: \normalsize
+# Crossref
 subfigGrid: true
+autoSectionLabels: true
+# Citeproc
+link-citations: true
+reference-section-title: References
 ---
 ```
 
-在每个 Markdown 文件最上面形如上面 YAML 代码的叫做`YAML Front Matter`，可以理解为对全文的配置。这里主要是一些对[Pandoc 的配置](https://www.pandoc.org/MANUAL.html#variables)以及对[Eisvogel 主题的配置](https://github.com/Wandmalfarbe/pandoc-latex-template#custom-template-variables)。
+在每个 Markdown 文件最上面形如上面 YAML 代码的叫做`YAML Front Matter`，可以理解为对全文的配置。这里主要是一些对[Pandoc](https://www.pandoc.org/MANUAL.html#variables),[Eisvogel](https://github.com/Wandmalfarbe/pandoc-latex-template#custom-template-variables), [Crossref](http://lierdakil.github.io/pandoc-crossref/#general-options) 和 [Citeproc](https://www.pandoc.org/MANUAL.html#citation-rendering)的配置。
 
 ## 生成
 
@@ -145,8 +244,9 @@ pandoc Report.md `
 --standalone `
 --listings `
 --number-sections `
---pdf-engine=xelatex `
 --filter pandoc-crossref `
+--filter=pandoc-citeproc `
+--pdf-engine=xelatex `
 --template eisvogel
 ```
 
@@ -156,8 +256,9 @@ pandoc Report.md `
 - `--standalone` 独立完整文件
 - `--listings` 使用[listings](https://ctan.org/pkg/listings)高亮代码
 - `--number-sections` 启用段落编号
+- `--filter pandoc-crossref` 使用过滤器 `pandoc-crossref`
+- `--filter pandoc-citeproc` 使用过滤器 `pandoc-citeproc`
 - `--pdf-engine=xelatex` 指定 PDF 的 engine 为 `xelatex`
-- `--filter pandoc-crossref` 指定过滤器为 `pandoc-crossref`
 - `--template eisvogel` 指定模板为 `eisvogel`
 
 ## 想法
