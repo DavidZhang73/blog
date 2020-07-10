@@ -6,7 +6,7 @@
 目前澳国立高级计算专业留学党一枚，喜欢编程，Python 爱好者。
 
 Welcome to my blog, I am **DavidZ**
-Advanced computing international student at AUN. Programmer and Pythonista.
+Advanced computing international student at ANU. Programmer and Pythonista.
 
 #### 技术栈 Stack
 
