@@ -6,7 +6,7 @@ tags:
   - Windows
 preview: 300
 date: 2020-02-11 17:07:43
-mp3: //davidz.cn/static/blog/mp3/mowenwei---yintian.mp3
+mp3: "https://davidz-blog.oss-cn-beijing.aliyuncs.com/music/莫文蔚 - 阴天.mp3"
 cover: //davidz.cn/static/blog/2020-02-11-inspur-ip-guard-uninstallation/cover.svg
 ---
 

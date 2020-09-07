@@ -7,8 +7,8 @@ tags:
   - Windows
 preview: 300
 date: 2020-02-12 19:17:06
-mp3: //davidz.cn/static/blog/mp3/huozun---juanzhulian.mp3
-cover: //davidz.cn/static/blog/2020-02-12-write-latex-report-with-markdown/cover.jpg
+mp3: "https://davidz-blog.oss-cn-beijing.aliyuncs.com/music/萧忆情Alex - 不谓侠.mp3"
+cover: https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/Eisvogel-1599485385.png
 ---
 
 > 原创发表于 [DavidZ Blog](https://blog.davidz.cn)，遵循 [CC 4.0 BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode) 版权协议，转载请附上原文出处链接及本声明。
@@ -47,7 +47,7 @@ cover: //davidz.cn/static/blog/2020-02-12-write-latex-report-with-markdown/cover
 
 #### 选项 1: VSCode
 
-![VSCode with Markdown Preview Enhanced](//davidz.cn/static/blog/2020-02-12-write-latex-report-with-markdown/vscode.png)
+![VSCode with Markdown Preview Enhanced](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/VSCode-1599485366.png)
 
 微软出品，宇宙最强 IDE `Visual Studio` 的“弟弟”，宇宙最强编辑器。
 
@@ -62,7 +62,7 @@ cover: //davidz.cn/static/blog/2020-02-12-write-latex-report-with-markdown/cover
 
 #### 选项 2: Typora
 
-![Typora](//davidz.cn/static/blog/2020-02-12-write-latex-report-with-markdown/typora.png)
+![Typora](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/Typora-1599485376.png)
 
 写作体验一级棒:+1:。
 
@@ -186,7 +186,7 @@ if __name__ == "__main__":
 
 #### Pandoc Theme: Eisvogel 主题
 
-![Eisvogel](//davidz.cn/static/blog/2020-02-12-write-latex-report-with-markdown/eisvogel.png)
+![Eisvogel](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/Eisvogel-1599485385.png)
 
 这个是我找到的计算机专业风格的论文/报告/书籍/幻灯片的开源模板，对于我来说是真的很合适了，美观，简约又专业。
 

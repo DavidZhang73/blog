@@ -5,9 +5,9 @@ categories:
 tags:
   - Markdown
 preview: 300
-cover: //davidz.cn/static/blog/img/workaround.jpg
+cover: https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/20200907211531-1599484533.png
 date: 2020-06-04 22:45:58
-mp3:
+mp3: "https://davidz-blog.oss-cn-beijing.aliyuncs.com/music/Delacey - Dream It Possible.mp3"
 ---
 
 > 原创发表于 [DavidZ Blog](https://blog.davidz.cn)，遵循 [CC 4.0 BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode) 版权协议，转载请附上原文出处链接及本声明。

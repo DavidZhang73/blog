@@ -136,7 +136,7 @@ theme_config:
   descriptionOne: "凡事都要留几分"
   descriptionTwo: "颜值是第一生产力"
   google_analytics: "UA-157733505-1"
-  avatar: //davidz.cn/static/blog/img/avator.jpg
+  avatar: https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/2019-1599483796.jpg
   socials:
     github: https://github.com/DavidZhang73
     twitter: https://twitter.com/david731998

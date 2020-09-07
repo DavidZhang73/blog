@@ -6,8 +6,8 @@ tags:
   - Linux
 preview: 300
 date: 2020-02-21 15:48:41
-mp3: //davidz.cn/static/blog/mp3/guangliang---tonghua.mp3
-cover: //davidz.cn/static/blog/2020-02-21-jenkins-update-solution-inside-gfw/intro.png
+mp3: "https://davidz-blog.oss-cn-beijing.aliyuncs.com/music/陈奕迅 - 红玫瑰.mp3"
+cover: https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/下载超时-1599485061.png
 ---
 
 > 原创发表于 [DavidZ Blog](https://blog.davidz.cn)，遵循 [CC 4.0 BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode) 版权协议，转载请附上原文出处链接及本声明。
@@ -18,7 +18,7 @@ cover: //davidz.cn/static/blog/2020-02-21-jenkins-update-solution-inside-gfw/int
 
 ## 原因
 
-![下载超时](//davidz.cn/static/blog/2020-02-21-jenkins-update-solution-inside-gfw/intro.png)
+![下载超时](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/下载超时-1599485061.png)
 
 根据经验，国外这些软件下载失败基本上都是因为链接不上服务器，换个源就好了。所以简单百度，找到大量相关教程，换了[清华源](https://mirrors.tuna.tsinghua.edu.cn/)在内的四五个镜像源，均无效。
 

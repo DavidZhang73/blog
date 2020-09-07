@@ -8,8 +8,8 @@ tags:
   - Docker
 preview: 300
 date: 2020-02-10 17:20:49
-mp3: //davidz.cn/static/blog/mp3/lironghao---maque.mp3
-cover: //davidz.cn/static/blog/2020-02-10-kinsing-virus/cover.jpg
+mp3: "https://davidz-blog.oss-cn-beijing.aliyuncs.com/music/汪苏泷 _ BY2 - 有点甜.mp3"
+cover: https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/netdata-1599485973.png
 ---
 
 > 原创发表于 [DavidZ Blog](https://blog.davidz.cn)，遵循 [CC 4.0 BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode) 版权协议，转载请附上原文出处链接及本声明。
@@ -20,23 +20,23 @@ cover: //davidz.cn/static/blog/2020-02-10-kinsing-virus/cover.jpg
 
 ## 发现
 
-![netdata](//davidz.cn/static/blog/2020-02-10-kinsing-virus/netdata.png)
+![netdata](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/netdata-1599485973.png)
 
 偶然看了看服务器状态，发现 CPU 占用一直保持在 100%上下，有些蹊跷。
 
 难道是我的博客访问量~~暴增~~？？？那是当然不可能的，然后我去看了看[Portainer](https://github.com/portainer/portainer)看了看，果然，
 
-![portainer](//davidz.cn/static/blog/2020-02-10-kinsing-virus/portainer.png)
+![portainer](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/portainer-1599485974.png)
 
 这个随机名称的容器就是 Kinsing 基于 Ubuntu 的容器，CPU 占用 100%。
 
-![进程](//davidz.cn/static/blog/2020-02-10-kinsing-virus/process.png)
+![进程](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/进程-1599485975.png)
 
 简单看了看容器里面的进程表，第一个运行了一个 shell 脚本，这个病毒就是这个脚本下载启动的关键，我打开看了看，~~也没看懂~~，大概是下载了几个可执行文件。第二个是 cron，这个是定时脚本，我猜应该是病毒定时检查一下运行情况？第三个好像是个守护进程，第四个应该是用于容器保持，第五个在网上能搜到，是个[挖矿的程序](https://www.baidu.com/s?wd=kdevtmpfsi)。
 
 无聊的我还简单看了看这个脚本的服务器 IP，
 
-![ip](//davidz.cn/static/blog/2020-02-10-kinsing-virus/ip.png)
+![ip](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/ip-1599485976.png)
 
 难道是俄罗斯大佬？？？
 

@@ -7,8 +7,8 @@ tags:
   - Windows
 preview: 300
 date: 2020-02-03 12:43:11
-mp3: //davidz.cn/static/blog/mp3/wangsulong-_-by2---youdiantian.mp3
-cover: //davidz.cn/static/blog/2020-02-03-windows-package-manager-scoop/cover.png
+mp3: "https://davidz-blog.oss-cn-beijing.aliyuncs.com/music/林宥嘉 - 成全 (Live).mp3"
+cover: https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/neofetch-1599485622.png
 ---
 
 > 原创发表于 [DavidZ Blog](https://blog.davidz.cn)，遵循 [CC 4.0 BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode) 版权协议，转载请附上原文出处链接及本声明。
@@ -101,13 +101,13 @@ scoop list
 
 ### [bat](https://github.com/sharkdp/bat)
 
-![bat](//davidz.cn/static/blog/2020-02-03-windows-package-manager-scoop/bat.png)
+![bat](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/bat-1599485622.png)
 
 用于代替 cat，带行号，带高亮，可`tail -f`。
 
 ### [cpu-z](https://www.cpuid.com/softwares/cpu-z.html)
 
-![cpuz](//davidz.cn/static/blog/2020-02-03-windows-package-manager-scoop/cpuz.png)
+![cpuz](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/cpuz-1599485622.png)
 
 著名的 CPU 信息查看软件。
 
@@ -117,7 +117,7 @@ scoop list
 
 ### [figlet](https://github.com/lukesampson/figlet)
 
-![figlet](//davidz.cn/static/blog/2020-02-03-windows-package-manager-scoop/figlet.png)
+![figlet](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/figlet-1599485622.png)
 
 把字符串改成字符串图像，还有好几个主题，现在知道那些文档的开头是怎么生成了吧:smile:。
 
@@ -127,13 +127,13 @@ scoop list
 
 ### [motrix](https://motrix.app/)
 
-![motrix](//davidz.cn/static/blog/2020-02-03-windows-package-manager-scoop/motrix.png)
+![motrix](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/motrix-1599485622.png)
 
 使用 Electron 开发的 aria2 GUI 客户端，可惜不能指定 aria2，只能使用自带的。
 
 ### [neofetch](https://github.com/dylanaraps/neofetch)
 
-![neofetch](//davidz.cn/static/blog/2020-02-03-windows-package-manager-scoop/neofetch.png)
+![neofetch](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/neofetch-1599485622.png)
 
 当你想截个屏，展示一下你的 Terminal 又不知道放什么内容时，就它了。
 
@@ -159,7 +159,7 @@ Scoop 同开发者开发的一系列 PowerShell 工具，我就说 PS 在国外�
 
 ### [spacesniffer](http://www.uderzo.it/main_products/space_sniffer/index.html)
 
-![spacesniffer](//davidz.cn/static/blog/2020-02-03-windows-package-manager-scoop/spacesniffer.png)
+![spacesniffer](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/spacesniffer-1599485769.png)
 
 想知道那个文件夹占用了你的 C 盘最多？
 
@@ -177,13 +177,13 @@ Scoop 同开发者开发的一系列 PowerShell 工具，我就说 PS 在国外�
 
 ### [winscp](https://winscp.net/eng/docs/lang:chs)
 
-![winscp](//davidz.cn/static/blog/2020-02-03-windows-package-manager-scoop/winscp.png)
+![winscp](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/winscp-1599485622.png)
 
 图形化管理服务器的文件。
 
 ## 软件结构
 
-![目录结构](//davidz.cn/static/blog/2020-02-03-windows-package-manager-scoop/tree.png)
+![目录结构](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/tree-1599485622.png)
 
 虽然结构还是很清晰的，但不得不说，这几个名字起的太谜了。
 
@@ -191,13 +191,13 @@ Scoop 同开发者开发的一系列 PowerShell 工具，我就说 PS 在国外�
 
 这个目录下面时所有安装的软件包。每个软件包都是这样的，
 
-![apps](//davidz.cn/static/blog/2020-02-03-windows-package-manager-scoop/apps.png)
+![apps](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/app-1599485622.png)
 
 每个 app 的 current 都指向最新的那个文件夹。
 
 ### buckets
 
-![buckets](//davidz.cn/static/blog/2020-02-03-windows-package-manager-scoop/buckets.png)
+![buckets](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/buckets-1599485622.png)
 
 这个目录下是所有安装的源。
 

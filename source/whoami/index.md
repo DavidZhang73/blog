@@ -1,4 +1,4 @@
-<img src="//davidz.cn/static/blog/img/avator.jpg" style="height: 100px; width: 100px; border-radius: 50%; margin-bottom: 30px" />
+<img src="https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/2019-1599483796.jpg" style="height: 100px; width: 100px; border-radius: 50%; margin-bottom: 30px" />
 
 #### 关于我 Who am I
 

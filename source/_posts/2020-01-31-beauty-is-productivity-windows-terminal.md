@@ -8,29 +8,29 @@ tags:
   - Terminal
 preview: 300
 date: 2020-01-31 18:21:12
-mp3: //davidz.cn/static/blog/mp3/chenyixun---hongmeigui.mp3
-cover: //davidz.cn/static/blog/2020-01-31-beauty-is-productivity-windows-terminal/cover.jpg
+mp3: "https://davidz-blog.oss-cn-beijing.aliyuncs.com/music/李荣浩 - 麻雀.mp3"
+cover: https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/windows-terminal-1599486124.png
 ---
 
 > 原创发表于 [DavidZ Blog](https://blog.davidz.cn)，遵循 [CC 4.0 BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode) 版权协议，转载请附上原文出处链接及本声明。
 
 ## 回顾
 
-![CMD](//davidz.cn/static/blog/2020-01-31-beauty-is-productivity-windows-terminal/cmd.png)
+![CMD](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/cmd-1599486120.png)
 
 记得我最早的时候用 Visual Studio 写了第一个 Hello World 程序，激动的点运行，出来个黑框一闪就过去了，啥也没看到。
 
-![PowerShell](//davidz.cn/static/blog/2020-01-31-beauty-is-productivity-windows-terminal/powershell.png)
+![PowerShell](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/powershell-1599486121.png)
 
 后来偶然了解 PowerShell，又变成了一个蓝色的框，还会有进度提示，红的，黑的，突兀得很:cry:。
 
-![bash](//davidz.cn/static/blog/2020-01-31-beauty-is-productivity-windows-terminal/bash.png)
+![bash](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/bash-1599486122.png)
 
 后来上了大学终于在 Ubuntu 上见到了 bash，完全改变了我对 Shell 的认知。
 
 傻傻分不清 Shell 和 Terminal 的我，激动的打开 Git 自带的 bash，它却长成了这样。
 
-![Git-Bash](//davidz.cn/static/blog/2020-01-31-beauty-is-productivity-windows-terminal/git-bash.png)
+![Git-Bash](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/gitbash-1599486123.png)
 
 一番优化之后也不是不能用，后来还入坑了 [Cmder](https://github.com/cmderdev/cmder)，用于替代 [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/) 那个更加原始的 terminal。
 
@@ -74,7 +74,7 @@ scoop install windows-terminal
 
 通过配置，最终 terminal 可以长成这个样子。
 
-![windows terminal](//davidz.cn/static/blog/2020-01-31-beauty-is-productivity-windows-terminal/windows-terminal.png)
+![windows terminal](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/windows-terminal-1599486124.png)
 
 现阶段只有 json 格式的配置文件，还没有图形化配置界面，项目组说正式版会有，最终应该会与 Vscode 的配置一样。
 
@@ -204,11 +204,11 @@ Import-Module xxx
 
 这个是 oh-my-zsh 的 PowerShell 版本，但是只能管理主题。
 
-![robbyrussel](//davidz.cn/static/blog/2020-01-31-beauty-is-productivity-windows-terminal/robbyrussel.png)
+![robbyrussel](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/robbyrussel-1599486125.png)
 
 我比较喜欢的是这个 robbyrussel 主题，因为比较简洁。
 
-![my-theme](//davidz.cn/static/blog/2020-01-31-beauty-is-productivity-windows-terminal/my-theme.png)
+![my-theme](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/my-theme-1599486170.png)
 
 后来参考了[dotfiles](https://github.com/spencerwooo/dotfiles#powershell)，自己按照 oh-my-zsh 的 ys 主题魔改了一个，为了区分不同环境，我把最前面的符号改成了`PS`。
 

@@ -5,8 +5,8 @@ categories:
 tags:
   - Ada
   - ANU
-mp3: "//davidz.cn/static/blog/mp3/daiquan---qingshanbaiyun.mp3"
-cover: "//davidz.cn/static/blog/2020-01-11-anu-comp2310-assignment1/cover.png"
+mp3: "https://davidz-blog.oss-cn-beijing.aliyuncs.com/music/光良 - 童话.mp3"
+cover: https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/截图-1599486510.png
 preview: 300
 date: 2020-01-11 18:04:26
 ---
@@ -34,9 +34,9 @@ date: 2020-01-11 18:04:26
 > 我采用的是**球形模型**，这个模型参考于这次作业的 [Examples](https://cs.anu.edu.au/courses/comp2310/1-Labs-Assignments.html)。
 > 在和我的同学互相交流时，这个模型是最普遍的，解决方案是最多的，效果也是相对最好的。
 
-![3D球形模型](//davidz.cn/static/blog/2020-01-11-anu-comp2310-assignment1/figure1.svg)
+![3D球形模型](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/3D球形模型-1599486499.png)
 
-![2D球形模型](//davidz.cn/static/blog/2020-01-11-anu-comp2310-assignment1/figure2.svg)
+![2D球形模型](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/2D球形模型-1599486500.png)
 
 球形模型设计的两大重点是：
 
@@ -77,7 +77,7 @@ date: 2020-01-11 18:04:26
 
 #### 能量球位置估计（Energy Globe Position Estimation）
 
-![能量球位置估计](//davidz.cn/static/blog/2020-01-11-anu-comp2310-assignment1/figure3.svg)
+![能量球位置估计](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/能量球位置估计-1599486501.png)
 
 这个问题类似于一个追击问题（红球是一个匀速导弹，蓝球是拦截导弹），我们需要求的是预计追击时间$T_e$。
 
@@ -119,7 +119,7 @@ Left_Charge := Current_Charge - Current_Discharge_Per_Sec * Estimated_Time;
 
 #### 半径决策（Radius Determination）
 
-![半径决策](//davidz.cn/static/blog/2020-01-11-anu-comp2310-assignment1/figure4.svg)
+![半径决策](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/半径决策-1599486502.png)
 
 半径向量：
 
@@ -140,7 +140,7 @@ Destination := Vehicle_Message.EG.Position + Radius_Vector;
 
 #### 使用当前能量优化半径（Radius Optimization With Current Charge）
 
-![使用当前能量优化半径](//davidz.cn/static/blog/2020-01-11-anu-comp2310-assignment1/figure5.svg)
+![使用当前能量优化半径](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/使用当前能量优化半径-1599486502.png)
 
 ```ada
 Radius_Vector = (0.75 + 0.25 * Current_Charge) * Radius_Vector;
@@ -153,7 +153,7 @@ Radius_Vector = (0.75 + 0.25 * Current_Charge) * Radius_Vector;
 > **注意**
 > 这个机制未经过控制变量实验验证，只是理论上分析得到的。
 
-![一个解决碰撞的机制](//davidz.cn/static/blog/2020-01-11-anu-comp2310-assignment1/figure6.svg)
+![一个解决碰撞的机制](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/一个解决碰撞的机制-1599486503.png)
 
 因为`车`和`车`离的足够近时会发生碰撞，表现为大家都减速不动。所以当一个`车`从外层到`能量球`去加油时，周围的`车`减速会一定程度的减少碰撞的发生。
 
@@ -196,13 +196,13 @@ Clock - Vehicle_Message.EG_Update_Time > Vehicle_Message_Expire_Time
 
 #### 使用旋转优化（Optimization With Rotation）
 
-![旋转半径](//davidz.cn/static/blog/2020-01-11-anu-comp2310-assignment1/figure7.svg)
+![旋转半径](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/旋转半径-1599486504.png)
 
-![旋转轴](//davidz.cn/static/blog/2020-01-11-anu-comp2310-assignment1/figure8.svg)
+![旋转轴](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/旋转轴-1599486505.png)
 
-![2D旋转半径](//davidz.cn/static/blog/2020-01-11-anu-comp2310-assignment1/figure9.svg)
+![2D旋转半径](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/2D旋转半径-1599486506.png)
 
-![3D旋转](//davidz.cn/static/blog/2020-01-11-anu-comp2310-assignment1/figure10.svg)
+![3D旋转](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/3D旋转-1599486507.png)
 
 相对于静态的在球面等待，动态的在球面旋转在实验中取得了更稳定的表现。
 
@@ -219,11 +219,11 @@ $$
 
 #### 自动半径适应（Automatic Radius Adaptation）
 
-![通讯环](//davidz.cn/static/blog/2020-01-11-anu-comp2310-assignment1/figure11.svg)
+![通讯环](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/通讯环-1599486507.png)
 
-![通讯环内](//davidz.cn/static/blog/2020-01-11-anu-comp2310-assignment1/figure12.svg)
+![通讯环内](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/通讯环内-1599486508.png)
 
-![通讯环外](//davidz.cn/static/blog/2020-01-11-anu-comp2310-assignment1/figure13.svg)
+![通讯环外](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/通讯环外-1599486509.png)
 
 我们在 Stage A&B 中的半径是手动设置的，但是在 Stage C 中，每个球星模型的`车`的数量是动态的，如果半径不跟随数量变化，那么就有可能丢失通讯。
 
@@ -278,7 +278,7 @@ Actual_Radius_Vector := 1.5 * Rotated_Radius_Vector;
 
 ### 截图
 
-![截图](//davidz.cn/static/blog/2020-01-11-anu-comp2310-assignment1/cover.png)
+![截图](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/截图-1599486510.png)
 
 ### Stage A&B(`Single_Globe_In_Orbit`)
 
@@ -289,7 +289,7 @@ Actual_Radius_Vector := 1.5 * Rotated_Radius_Vector;
 |      128       |      128      |  5 min   |     5      |     126.8      |   0.990625    |       20 Hz        |
 |      256       |      256      |  5 min   |     5      |      233       |   0.910156    |        9 Hz        |
 
-![Stage A&B](//davidz.cn/static/blog/2020-01-11-anu-comp2310-assignment1/table1.svg)
+![Stage A&B](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/stageAB-1599486511.png)
 
 ### Stage C(`Random_Globes_In_Orbits`)
 
@@ -300,7 +300,7 @@ Actual_Radius_Vector := 1.5 * Rotated_Radius_Vector;
 |      128       |      128      |  5 min   |     5      |     109.2      |   0.853125    |       20 Hz        |
 |      256       |      256      |  5 min   |     5      |     208.2      |   0.813281    |        9 Hz        |
 
-![Stage C](//davidz.cn/static/blog/2020-01-11-anu-comp2310-assignment1/table2.svg)
+![Stage C](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/stageC-1599486512.png)
 
 ### Stage D(`Random_Globes_In_Orbits`)
 
@@ -311,7 +311,7 @@ Actual_Radius_Vector := 1.5 * Rotated_Radius_Vector;
 |      128       |      100      |  5 min   |     5      |      83.4      |     0.834     |       20 Hz        |
 |      256       |      150      |  5 min   |     5      |      133       |   0.886667    |        9 Hz        |
 
-![Stage D](//davidz.cn/static/blog/2020-01-11-anu-comp2310-assignment1/table3.svg)
+![Stage D](https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/stageD-1599486513.png)
 
 ## 感谢
 
