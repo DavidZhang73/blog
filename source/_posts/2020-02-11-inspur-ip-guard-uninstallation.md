@@ -7,7 +7,7 @@ tags:
 preview: 300
 date: 2020-02-11 17:07:43
 mp3: "https://davidz-blog.oss-cn-beijing.aliyuncs.com/music/莫文蔚 - 阴天.mp3"
-cover: //davidz.cn/static/blog/2020-02-11-inspur-ip-guard-uninstallation/cover.svg
+cover: https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/langchao-1599636307.jpg
 ---
 
 > 原创发表于 [DavidZ Blog](https://blog.davidz.cn)，遵循 [CC 4.0 BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode) 版权协议，转载请附上原文出处链接及本声明。

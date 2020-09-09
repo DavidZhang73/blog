@@ -6,7 +6,7 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
-    "server": "hexo server --draft",
+    "server": "hexo server --draft -p 9999",
     "upload": "node tools/upload.js",
     "mozjpeg": "node tools/mozjpeg.js",
     "deploy-with-scp": "node tools/deploy-with-scp.js",

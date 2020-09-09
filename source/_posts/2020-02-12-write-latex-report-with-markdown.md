@@ -23,7 +23,7 @@ cover: https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/Eisvogel-1599485385.p
 
 [eisvogel 主题样例](https://github.com/Wandmalfarbe/pandoc-latex-template/#example-images)
 
-你也可以从[这里](//davidz.cn/static/blog/2020-02-12-write-latex-report-with-markdown/report.pdf)看一下我的成果作为参考，我觉得完全符合我的要求。
+你也可以从[这里](https://davidz-blog.oss-cn-beijing.aliyuncs.com/asset/Report.pdf)看一下我的成果作为参考，我觉得完全符合我的要求。
 
 ## 思路
 
