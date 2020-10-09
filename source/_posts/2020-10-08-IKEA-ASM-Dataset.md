@@ -32,7 +32,7 @@ mp3:
 
 家具方面，4 种家居，side table, coffee table, TV bench, and drawer，每种三个颜色，white, oak, and black。
 
-标注方面，人工标注视频的$1%$左右，人工复核过。
+标注方面，人工标注视频的$1\%$左右，人工复核过。
 
 ### 基准
 
