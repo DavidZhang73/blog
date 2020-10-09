@@ -1,12 +1,12 @@
 ---
 title: 想法速记：SVD求齐次线性方程组 Ax=0 的解
+date: 2020-06-04 21:43:53
 categories:
   - Idea
 tags:
   - null
 preview: 300
-cover: https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/20200907211531-1599484533.png
-date: 2020-06-04 21:43:53
+cover: https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/idea-1602143497.jpg
 mp3: "https://davidz-blog.oss-cn-beijing.aliyuncs.com/music/Delacey - Dream It Possible.mp3"
 ---
 

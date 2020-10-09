@@ -1,12 +1,12 @@
 ---
 title: 技巧速记：Windows 10 透明效果无法正常工作
+date: 2020-06-27 12:42:36
 categories:
   - Workaround
 tags:
   - Windows
 preview: 300
-cover: https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/20200907211531-1599484533.png
-date: 2020-06-27 12:42:36
+cover: https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/idea-1602143497.jpg
 mp3: "https://davidz-blog.oss-cn-beijing.aliyuncs.com/music/Delacey - Dream It Possible.mp3"
 ---
 

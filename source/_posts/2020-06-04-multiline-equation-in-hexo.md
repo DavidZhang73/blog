@@ -1,12 +1,12 @@
 ---
 title: 技巧速记：如何在Hexo中插入多行公式
+date: 2020-06-04 22:45:58
 categories:
   - Workaround
 tags:
   - Markdown
 preview: 300
-cover: https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/20200907211531-1599484533.png
-date: 2020-06-04 22:45:58
+cover: https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/idea-1602143497.jpg
 mp3: "https://davidz-blog.oss-cn-beijing.aliyuncs.com/music/Delacey - Dream It Possible.mp3"
 ---
 

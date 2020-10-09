@@ -1,11 +1,11 @@
 ---
 title: {{ title }}
 date: {{ date }}
-categories: 
-  - 
+categories:
+  -
 tags:
-  - 
-mp3:
-cover:
+  -
 preview: 300
+cover:
+mp3:
 ---
