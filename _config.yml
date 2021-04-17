@@ -170,7 +170,13 @@ theme_config:
         "powershell",
         "yaml",
       ]
-
+  beian:
+    enable: true
+    beianloc: 鲁ICP备
+    beianid: 19008089号-1
+  police:
+    enable: false
+    
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
