@@ -129,20 +129,39 @@ search:
   content: true
 theme: obsidian
 theme_config:
+  # 菜单设置 | 格式 = 菜单名: 菜单url
+  menu:
+    ABOUT: /whoami
+    CATEGORIES: /categories
+    TAGS: /tags
+    ARCHIVES: /archives
+  # 分类页和标签页自定义标题配置
   page_titles:
     categories: "分类"
     tags: "标签"
     archives: "归档"
-  descriptionOne: "凡事都要留几分"
-  descriptionTwo: "颜值是第一生产力"
-  google_analytics: "UA-157733505-1"
-  avatar: https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/2019-1599483796.jpg
+  # 社交媒体链接
   socials:
     github: https://github.com/DavidZhang73
     twitter: https://twitter.com/david731998
     stackoverflow: https://stackoverflow.com/users/12693553/davidz
-  # Gitalk comment plugin
-  # see https://github.com/gitalk/gitalk
+  # 网页图标
+  favicon: /img/favicon.png
+  # 是否启用目录
+  TOC: true
+  # 文章内的默认头像
+  avatar: https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/2019-1599483796.jpg
+  # 网站的关键词，都好分割，用于SEO优化
+  keywords: Developer, Python, C++, JavaScript, Java
+  # 关闭默认滚动条
+  scrollbar: true
+  # 网站口号
+  descriptionOne: "凡事都要留几分"
+  descriptionTwo: "颜值是第一生产力"
+  # 如果使用google analytics, 请填写ID
+  google_analytics: "UA-157733505-1"
+  # Gitalk 评论插件
+  # 查看 https://github.com/gitalk/gitalk
   gitalk:
     enable: true
     autoExpand: true
@@ -151,31 +170,67 @@ theme_config:
     repo: "blog.davidz.cn"
     owner: "DavidZhang73"
     admin: "DavidZhang73"
-  keywords: Developer, Python, C++, JavaScript, Java
-  # Use codemirror instead of highlight js for better colors
-  # if you want more language support check the modes list at official website
-  # modes see: https://codemirror.net/mode/
-  # see https://codemirror.net/
+  # Valine 评论插件 (推荐使用!)
+  # 查看 https://valine.js.org/quickstart.html
+  valine:
+    enable: false
+  # 文章字数和阅读时间统计插件
+  # see https://github.com/theme-next/hexo-symbols-count-time
+  symbols_count_time:
+    enable: true
+    wordCount: true
+    readCount: true
+    awl: 4
+    wpm: 275
+    suffix: mins.
+  # html截取插件（用于首页截取内容）
+  # see https://github.com/TriDiamond/hexo-html-truncate
+  html_truncate:
+    enable: true
+    # 文章保留多少个字符
+    postLength: 250
+    # 封面文章保留多少个字符
+    coverLength: 100
+    # 省略符号
+    ellipsis: '...'
+    # 需要过滤的html标签
+    excludes: ['img']
+    # 截取时保留空白空格字符
+    keepWhitespaces: true
+    # 截取到最后的时候保留完成的字（只对英文有用）
+    reserveLastWord: true
+  # Busuanzi 浏览量统计插件
+  # see http://ibruce.info/2015/04/04/busuanzi/
+  busuanzi:
+    enable: true
+  # Sharejs 分享
+  # see https://github.com/overtrue/share.js/
+  sharejs:
+    enable: true
+    disabled: 'facebook,douban,linkedin,diandian,tencent,google'
+  # 使用了codemirror替换了highlight.js，代码高亮更加完善，也更接近IDE的高亮样式
+  # 默认已经填入了一些语言的mode支持，如果你需要其他语言的支持，请查看codemirror官网的mode
+  # modes文档请看: https://codemirror.net/mode/
+  # codemirror官网： https://codemirror.net/
+  # 默认支持了：JS, HTML, CSS, PHP, JAVA, C, C#, C++, SHELL, PYTHON.
   codemirror:
-    modes:
-      [
-        "javascript",
-        "css",
-        "xml",
-        "htmlmixed",
-        "clike",
-        "shell",
-        "python",
-        "cmake",
-        "powershell",
-        "yaml",
-      ]
+    modes: ['javascript', 'css', 'xml', 'htmlmixed', 'clike', 'php', 'shell', 'python']
+  # 启用 mathjax 支持
+  mathjax: true
+  # 此功能仅使用国内服务器的用户需要配置，国外服务器开办网站不需要备案。
   beian:
     enable: true
     beianloc: 鲁ICP备
     beianid: 19008089号-1
   police:
     enable: false
+  # 自定义鼠标样式
+  mouse:
+    enable: false
+  # APlayer, 目前只支持网易云歌单
+  aplayer:
+    # 启用aplayer
+    enable: true
   footer_html:
   header_html: '<script async defer data-website-id="0b71aae0-602f-46ff-9f2a-dfad9d18f958" src="https://umami.davidz.cn/umami.js"></script>'
 
