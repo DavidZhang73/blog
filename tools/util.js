@@ -3,6 +3,8 @@ const superagent = require('superagent')
 const { spawnSync } = require('child_process')
 const moment = require('moment')
 
+const NPM_CLI_PATHNAME = 'D:\\Scoop\\persist\\nvm\\nodejs\\nodejs\\node_modules\\npm\\bin\\npm-cli.js'
+
 /**
  * 运行一个进程
  * @param cmd 程序名
@@ -27,7 +29,7 @@ function startProcess(cmd, args, name, stdio) {
 function hexoClean() {
   const cmd = 'node'
   const args = [
-    'E:\\Lang\\js\\node\\node_modules\\npm\\bin\\npm-cli.js',
+    NPM_CLI_PATHNAME,
     'run',
     'clean',
     '--scripts-prepend-node-path=auto',
@@ -41,7 +43,7 @@ function hexoClean() {
 function hexoGenerate() {
   const cmd = 'node'
   const args = [
-    'E:\\Lang\\js\\node\\node_modules\\npm\\bin\\npm-cli.js',
+    NPM_CLI_PATHNAME,
     'run',
     'build',
     '--scripts-prepend-node-path=auto',
@@ -55,7 +57,7 @@ function hexoGenerate() {
 function hexoDeploy() {
   const cmd = 'node'
   const args = [
-    'E:\\Lang\\js\\node\\node_modules\\npm\\bin\\npm-cli.js',
+    NPM_CLI_PATHNAME,
     'run',
     'deploy',
     '--scripts-prepend-node-path=auto',
