@@ -1,0 +1,40 @@
+name: Continuous Deployment
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Disable quotePath
+        run: git config core.quotePath false
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
+      - uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Install Dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: npm ci
+      - name: Build
+        run: npm run build
+      - name: Deploy with ssh
+        uses: easingthemes/ssh-deploy@main
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+          ARGS: "-rltgoDzvO --delete"
+          SOURCE: "public/"
+          REMOTE_HOST: davidz.cn
+          REMOTE_USER: root
+          TARGET: /docker/blog/
+      - name: Deploy to GitHub Page
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: public
