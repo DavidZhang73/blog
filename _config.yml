@@ -236,10 +236,10 @@ theme_config:
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  - type: git
-    repo: https://github.com/DavidZhang73/DavidZhang73.github.io
-    branch: [master]
-  - type: git
-    repo: http://git.davidz.cn/david/DavidZhang73.github.io.git
-    branch: [master]
+# deploy:
+#   - type: git
+#     repo: https://github.com/DavidZhang73/DavidZhang73.github.io
+#     branch: [master]
+#   - type: git
+#     repo: http://git.davidz.cn/david/DavidZhang73.github.io.git
+#     branch: [master]
