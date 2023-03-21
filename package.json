@@ -35,7 +35,7 @@
     "inquirer": "^7.0.4",
     "markdown-it-emoji": "^1.4.0",
     "markdown-it-task-lists": "^2.1.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "pinyin": "^2.9.0",
     "superagent": "^5.2.1"
   }
