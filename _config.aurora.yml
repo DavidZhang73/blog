@@ -45,7 +45,7 @@ menu:
   Archives: true
   Tags: true
   _About:
-    name: About
+    name: 关于
     path: https://academic.davidz.cn
 
 #! ---------------------------------------------------------------
