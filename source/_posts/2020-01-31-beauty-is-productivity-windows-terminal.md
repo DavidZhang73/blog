@@ -1,7 +1,7 @@
 ---
 title: 颜值是第一生产力 - Windows Terminal
 categories:
-  - Productivity
+  - 效率
 tags:
   - Open-Source
   - Windows

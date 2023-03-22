@@ -2,7 +2,7 @@
 title: 宜家家居组装数据集
 date: 2020-10-08 11:36:43
 categories:
-  - Paper Review
+  - 论文笔记
 tags:
   - CV
   - Dataset

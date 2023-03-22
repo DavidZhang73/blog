@@ -2,7 +2,7 @@
 title: 技巧速记：更改 Rattle 的语言
 date: 2020-05-17 15:16:07
 categories:
-  - Workaround
+  - 技巧
 tags:
   - R
 cover: https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/idea-1602143497.jpg

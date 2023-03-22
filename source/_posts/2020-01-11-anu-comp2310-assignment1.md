@@ -1,7 +1,7 @@
 ---
 title: ANU COMP2310(2019) Assignment 1
 categories:
-  - Study
+  - 学习
 tags:
   - Ada
   - ANU
@@ -9,9 +9,9 @@ cover: https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/截图-1599486510.png
 date: 2020-01-11 18:04:26
 ---
 
-> **敬告**
->
-> <div style="color: red">本博客仅供参考，请不要抄袭。</div>
+:::danger
+本博客仅供参考，请不要抄袭。
+:::
 
 ## 前言
 

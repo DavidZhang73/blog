@@ -2,7 +2,7 @@
 title: {{ title }}
 date: {{ date }}
 categories:
-  - Paper Review
+  - 论文笔记
 tags:
   -
 cover:

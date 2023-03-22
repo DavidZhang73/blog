@@ -2,7 +2,7 @@
 title: Hello World
 date: 2020-01-06 13:09:39
 categories:
-  - Personal
+  - 个人
 tags:
   - Others
 ---

@@ -1,7 +1,7 @@
 ---
 title: 浪潮实习
 categories:
-  - Internship
+  - 实习
 tags:
   - Cpp
   - Windows

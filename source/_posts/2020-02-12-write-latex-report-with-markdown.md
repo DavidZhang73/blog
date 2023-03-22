@@ -1,7 +1,7 @@
 ---
 title: 使用 Markdown 编写基于 Latex 的报告
 categories:
-  - Productivity
+  - 效率
 tags:
   - Markdown
   - Windows

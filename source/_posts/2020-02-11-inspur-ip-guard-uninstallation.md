@@ -1,7 +1,7 @@
 ---
 title: 卸载浪潮安装的 IP-GUARD 监控软件
 categories:
-  - Internship
+  - 实习
 tags:
   - Windows
 date: 2020-02-11 17:07:43

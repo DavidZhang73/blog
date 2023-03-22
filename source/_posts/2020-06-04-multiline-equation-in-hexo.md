@@ -2,7 +2,7 @@
 title: 技巧速记：如何在Hexo中插入多行公式
 date: 2020-06-04 22:45:58
 categories:
-  - Workaround
+  - 技巧
 tags:
   - Markdown
 cover: https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/idea-1602143497.jpg

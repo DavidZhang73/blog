@@ -2,7 +2,7 @@
 title: 技巧速记：Windows 10 透明效果无法正常工作
 date: 2020-06-27 12:42:36
 categories:
-  - Workaround
+  - 技巧
 tags:
   - Windows
 cover: https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/idea-1602143497.jpg

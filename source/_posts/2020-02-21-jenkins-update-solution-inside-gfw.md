@@ -1,7 +1,7 @@
 ---
 title: 墙内 Jenkins 插件下载的一种解决方案
 categories:
-  - DevOps
+  - 运维
 tags:
   - Linux
 date: 2020-02-21 15:48:41

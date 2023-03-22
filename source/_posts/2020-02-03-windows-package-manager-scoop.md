@@ -1,7 +1,7 @@
 ---
 title: Windows 包管理器 - Scoop
 categories:
-  - Productivity
+  - 效率
 tags:
   - Open-Source
   - Windows
