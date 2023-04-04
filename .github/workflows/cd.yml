@@ -2,7 +2,7 @@ name: Continuous Deployment
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   workflow_dispatch:
 
 jobs:
@@ -35,3 +35,6 @@ jobs:
           REMOTE_HOST: davidz.cn
           REMOTE_USER: root
           TARGET: /docker/blog/
+      - name: Google ping sitemap
+        run: |
+          curl https://www.google.com/ping?sitemap=https://blog.davidz.cn/sitemap.xml
