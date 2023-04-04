@@ -38,3 +38,6 @@ jobs:
       - name: Google ping sitemap
         run: |
           curl https://www.google.com/ping?sitemap=https://blog.davidz.cn/sitemap.xml
+      - name: Baidu sitemap
+        run: |
+          curl -H 'Content-Type:text/plain' --data-binary @public/sitemap.txt "http://data.zz.baidu.com/urls?site=https://blog.davidz.cn&token=chvBQnYZ7wDH8kgu"
