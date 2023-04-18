@@ -170,5 +170,5 @@ aurora_bot:
 #! ---------------------------------------------------------------
 injects:
   scripts:
-    - <script async defer data-website-id="0b71aae0-602f-46ff-9f2a-dfad9d18f958" src="https://umami.davidz.cn/umami.js"></script>
+    - <script async defer data-website-id="0b71aae0-602f-46ff-9f2a-dfad9d18f958" src="https://umami.davidz.cn/script.js"></script>
   css:
