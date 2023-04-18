@@ -5,7 +5,7 @@ categories:
 tags:
   - Python
 date: 2023-04-16 15:00:00
-cover:
+cover: /img/tromp.c.png
 ---
 
 俗话说**颜值是第一生产力**。易读，规范美观的代码，是提高代码质量的第一步。以前一直使用 PyCharm 作为 IDE，Linter 和 Formatter 都是内置功能，用起来很简单，但是很多开源项目并不能很好的适配 PyCharm 默认的那些规则，如果使用第三方插件那就失去了使用 PyCharm 这样大而全 IDE 的优势。现在转到 VSCode 之后，需要自己配置对应的 Linter 和 Formatter 了。这里主要以 Python 为例，介绍一下我目前使用的 Linter 和 Formatter。
@@ -38,16 +38,15 @@ Linter 是代码检查工具，可以在不运行代码的形况下（静态检�
 
 ## Formatter
 
-Formatter 其实也可以看作是 Linter 的一种，我认为他们的主要区别是经过 Formatter 格式化前后的代码是否拥有相同的 AST。比如 isort，autopep8 会按照字母顺序对 import 语句进行排序，这样做会改变代码的 AST，因此，严格意义上讲他们不能算是 Formatter。
+Formatter 其实也可以看作是 Linter 的一种，我认为他们的主要区别是经过 Formatter 格式化前后的代码是否拥有相同的 AST。比如 [isort](https://pycqa.github.io/isort/)，[autopep8](https://github.com/hhatto/autopep8) 会按照字母顺序对 import 语句进行排序，这样做会改变代码的 AST，因此，严格意义上讲他们不能算是 Formatter。
 
-如果这样分类的话，比较知名的 Formatter 就只剩下了 [Black](https://github.com/psf/black) 和 [YAPF](https://github.com/google/yapf)。Black 拥有更多的 Star，原因可能是 Black 本身是一个有偏见的 Formatter，他默认情况下就提供了一套比较严格的规则，这样做的好处是基本不需要配置，极大的降低了使用门槛和心智负担。
+如果这样分类的话，比较知名的 Formatter 就只剩下了 [Black](https://github.com/psf/black) 和 [YAPF](https://github.com/google/yapf)。Black 拥有更多的 Star，原因可能是 Black 本身是一个有偏见（opinionated）的 Formatter，他默认情况下就提供了一套比较严格的规则，这样做的好处是基本不需要配置，极大的降低了使用门槛和心智负担。
 
 ## VSCode 插件
 
 **安装**
 
-直接在 VSCode 的插件市场搜索 Ruff（charliermarsh.ruff） 和 Black（
-ms-python.black-formatter） 即可，这两个插件都自带了对应的 Linter 和 Formatter，也就是说你不需要在你的项目中安装任何依赖。
+直接在 VSCode 的插件市场搜索 Ruff（charliermarsh.ruff） 和 Black（ms-python.black-formatter） 即可，这两个插件都自带了对应的 Linter 和 Formatter，也就是说你不需要在你的项目中安装任何依赖。
 
 **配置**
 
@@ -69,7 +68,7 @@ respect-gitignore = true
 ignore-init-module-imports = true
 ```
 
-需要注意的是，`line-width`需要一致。为了更好的可视化这个宽度，我们还可以在 VSCode 中设置 `"editor.rulers": [120]`：
+需要注意的是，`line-length`需要一致。为了更好的可视化这个宽度，我们还可以在 VSCode 中设置 `"editor.rulers": [120]`。
 
 **保存是自动修复并格式化**
 
@@ -87,7 +86,7 @@ ignore-init-module-imports = true
 }
 ```
 
-单纯的用 Black 进行格式化的默认快捷键是 `Shift + Alt + F`，添加上面的配置后，保存时（`Ctrl + S`）就会自动格式化和修复了。当然也可以在命令面板中（`Ctrl + Shift + P`）运行相应的命令。
+单纯的用 Black 进行格式化的默认快捷键是 `Shift + Alt + F`，添加上面的配置后，保存时（`Ctrl + S`）就会自动格式化（Black）和修复（Ruff autofix）了。当然也可以在命令面板中（`Ctrl + Shift + P`）运行相应的命令。
 
 **插件推荐**
 
@@ -109,3 +108,9 @@ ignore-init-module-imports = true
 ## 参考
 
 [Python Linter Comparison 2022: Pylint vs Pyflakes vs Flake8 vs autopep8 vs Bandit vs Prospector vs Pylama vs Pyroma vs Black vs Mypy vs Radon vs mccabe](https://inventwithpython.com/blog/2022/11/19/python-linter-comparison-2022-pylint-vs-pyflakes-vs-flake8-vs-autopep8-vs-bandit-vs-prospector-vs-pylama-vs-pyroma-vs-black-vs-mypy-vs-radon-vs-mccabe/)
+
+<style>
+pre .table {
+  display: inline;
+}
+</style>
