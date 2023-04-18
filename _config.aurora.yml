@@ -70,6 +70,12 @@ socials:
   customs:
   ##! Example:
   ##! --- Using SVG
+    google_scholar:
+      icon: /img/google_scholar.svg
+      link: https://scholar.google.co.uk/citations?user=r040KUgAAAAJ
+    academic:
+      icon: /img/academic.svg
+      link: https://academic.davidz.cn
   # bilibili:
   #   icon: http://localhost:4000/svg/bilibili.svg
   #   link: https://live.bilibili.com/22619211
