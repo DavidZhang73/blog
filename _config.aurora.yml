@@ -15,7 +15,7 @@ site:
   description: 颜值是第一生产力。
   link: '/'
   language: zh-CN
-  multi_language: false
+  multi_language: true
   logo: /img/logo.svg
   avatar: /img/avatar.jpg
   beian:
