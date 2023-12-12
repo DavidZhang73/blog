@@ -1,7 +1,7 @@
 #! ---------------------------------------------------------------
 #! Aurora Theme for Hexo
 #! ---------------------------------------------------------------
-#! Designed & Coded By TriDiamond
+#! Designed & Coded By Benny Guo
 #! ---------------------------------------------------------------
 
 #! ---------------------------------------------------------------
@@ -14,13 +14,24 @@ site:
   nick: 个人博客
   description: 颜值是第一生产力。
   link: '/'
-  language: cn
+  language: zh-CN
   multi_language: false
   logo: /img/logo.svg
   avatar: /img/avatar.jpg
   beian:
     number: 鲁ICP备19008089号-1
     link: https://beian.miit.gov.cn/
+  police_beian:
+    number: ''
+    link: ''
+  # Start date of the blog YYY-MM-DD
+  # 博客开始运行日期
+  started_date: 2020-01-06
+  # Path unique identifier (文章 URL 唯一标识)
+  # uid: use unique ID
+  # slug: use generated slug base on title
+  # (Default is 'slug')
+  pathSlug: 'slug'
 
 #! ---------------------------------------------------------------
 #! Authors Configs
@@ -42,10 +53,14 @@ authors:
 #! ---------------------------------------------------------------
 menu:
   About: false
-  Archives: true
   Tags: true
-  _About:
-    name: 关于
+  Archives: true
+  Friends: false
+  academic:
+    name: About
+    i18n:
+      en: About
+      zh-CN: 关于
     path: https://academic.davidz.cn
 
 #! ---------------------------------------------------------------
@@ -54,7 +69,7 @@ menu:
 #! ---------------------------------------------------------------
 theme:
   dark_mode: auto
-  profile_shape: circle # support `circle`, `diamond`, `rounded`
+  profile_shape: rounded # support `circle`, `diamond`, `rounded`
   feature: true
   gradient:
     color_1: '#24c6dc'
@@ -68,14 +83,14 @@ theme:
 socials:
   github: 'https://github.com/DavidZhang73'
   customs:
-  ##! Example:
-  ##! --- Using SVG
     google_scholar:
       icon: /img/google_scholar.svg
       link: https://scholar.google.co.uk/citations?user=r040KUgAAAAJ
     academic:
       icon: /img/academic.svg
       link: https://academic.davidz.cn
+  ##! Example:
+  ##! --- Using SVG
   # bilibili:
   #   icon: http://localhost:4000/svg/bilibili.svg
   #   link: https://live.bilibili.com/22619211
@@ -112,11 +127,11 @@ gitalk:
   autoExpand: true
   clientID: '489076c5dd3f5ba13f67'
   clientSecret: 'd6e3b245787b0b74d0dbe2639ef87f452a401194'
-  repo: 'blog'
-  owner: 'DavidZhang73'
-  admin: ['DavidZhang73']
+  repo: 'blog' ## dev-blo-comments
+  owner: 'DavidZhang73' ## owner name
+  admin: ['DavidZhang73'] ## ['admin_name']
   id: uid
-  language: cn
+  language: zh-CN
   distractionFreeMode: true
   recentComment: true
   proxy: ''
@@ -133,9 +148,33 @@ valine:
   lang: en
   avatarForce: false
   meta: ['nick', 'mail']
-  requiredFields: []
-  admin: 'TriDiamond'
+  requiredFields: ['nick', 'mail']
+  admin: '' # admin username
   recentComment: true
+
+# Twikoo comment plugin
+# see https://twikoo.js.org/quick-start.html
+twikoo:
+  enable: false
+  recentComment: true
+  envId: xxxxxxxxxxxxxxx # 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  # region: ap-guangzhou # 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+  lang: 'en' # 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
+
+# Waline comment plugin
+# see https://waline.js.org/guide/get-started/
+waline:
+  enable: false
+  recentComment: true
+  reaction: false
+  login: 'disable'
+  meta: ['nick', 'mail']
+  requiredMeta: ['nick', 'mail']
+  commentSorting: 'latest'
+  wordLimit: 0
+  imageUploader: false
+  pageSize: 10
+  serverURL: '' # 填写服务端地址
 
 # Enable Busuanzi statistic plugin
 # see http://ibruce.info/2015/04/04/busuanzi/
@@ -172,3 +211,24 @@ injects:
   scripts:
     - <script async defer data-website-id="0b71aae0-602f-46ff-9f2a-dfad9d18f958" src="https://umami.davidz.cn/script.js"></script>
   css:
+
+#! ---------------------------------------------------------------
+#! Footer links
+#! ---------------------------------------------------------------
+footer_links:
+  # - title: # main title
+  #   links:
+  #     - title: # link title
+  #       url: # URL link
+  #     - title: # link title
+  #       url: # URL link
+  #     - title: Friends # link of friends mode / 友链模式
+  #       mode: 'links'
+
+#! ---------------------------------------------------------------
+#! Highlighter Shiki
+#! ---------------------------------------------------------------
+shiki:
+  enable: true
+  theme: one-dark-pro
+  backgroundColor: "#1a1a1a"

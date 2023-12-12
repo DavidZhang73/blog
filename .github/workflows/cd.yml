@@ -9,13 +9,13 @@ jobs:
   build-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@main
         with:
           submodules: true
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@main
         with:
-          node-version: 16
-      - uses: actions/cache@v2
+          node-version: 20
+      - uses: actions/cache@main
         with:
           path: node_modules
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
