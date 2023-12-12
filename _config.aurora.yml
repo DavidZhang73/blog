@@ -15,9 +15,9 @@ site:
   description: 颜值是第一生产力。
   link: '/'
   language: zh-CN
-  multi_language: true
+  multi_language: false
   logo: /img/logo.svg
-  avatar: /img/avatar.jpg
+  avatar: /img/2022.jpg
   beian:
     number: 鲁ICP备19008089号-1
     link: https://beian.miit.gov.cn/
@@ -81,7 +81,7 @@ theme:
 #! @docs https://aurora.tridiamond.tech/guide/social.html
 #! ---------------------------------------------------------------
 socials:
-  github: 'https://github.com/DavidZhang73'
+  github: https://github.com/DavidZhang73
   customs:
     google_scholar:
       icon: /img/google_scholar.svg
