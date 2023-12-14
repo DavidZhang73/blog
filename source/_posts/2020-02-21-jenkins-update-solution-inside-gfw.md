@@ -24,13 +24,13 @@ cover: https://davidz-blog.oss-cn-beijing.aliyuncs.com/img/下载超时-15994850
 
 那么解决方案就很简单了，我们只需要把`/var/jenkins_home/updates/default.json`这个文件中的所有
 
-```htmlmixed
+```html
 http://updates.jenkins-ci.org/download/plugins/
 ```
 
 替换成，
 
-```htmlmixed
+```html
 https://mirrors.tuna.tsinghua.edu.cn/jenkins/plugins/
 ```
 
