@@ -1,0 +1,6 @@
+{
+  "name": "blog-devcontainer",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:16",
+  "features": {},
+  "postCreateCommand": "npm ci"
+}
