@@ -30,7 +30,7 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
-      - name: Deploy with strict SSH verification
+      - name: Deploy identical build to both origins
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           DEPLOY_HOST: ${{ vars.DEPLOY_HOST }}
@@ -38,25 +38,12 @@ jobs:
           DEPLOY_PORT: ${{ vars.DEPLOY_PORT }}
           TARGET: ${{ vars.TARGET }}
           SSH_KNOWN_HOSTS: ${{ vars.SSH_KNOWN_HOSTS }}
-        run: |
-          set -euo pipefail
-          test "$DEPLOY_HOST" = "101.132.243.87"
-          test "$DEPLOY_USER" = "root"
-          test "$DEPLOY_PORT" = "22"
-          test "$TARGET" = "/opt/1panel/www/sites/blog.davidz.cn/index/"
-          test -s public/index.html
-          test -n "$SSH_PRIVATE_KEY" && test -n "$SSH_KNOWN_HOSTS"
-          key_file=$(mktemp)
-          hosts_file=$(mktemp)
-          trap 'rm -f "$key_file" "$hosts_file"' EXIT
-          chmod 600 "$key_file" "$hosts_file"
-          printf '%s\n' "$SSH_PRIVATE_KEY" > "$key_file"
-          printf '%s\n' "$SSH_KNOWN_HOSTS" > "$hosts_file"
-          ssh_opts=(-i "$key_file" -o IdentitiesOnly=yes -o BatchMode=yes -o StrictHostKeyChecking=yes -o UserKnownHostsFile="$hosts_file" -p "$DEPLOY_PORT")
-          ssh "${ssh_opts[@]}" "$DEPLOY_USER@$DEPLOY_HOST" "test -d '$TARGET' && test ! -L '$TARGET'"
-          printf -v RSYNC_RSH '%q ' ssh "${ssh_opts[@]}"
-          export RSYNC_RSH
-          rsync -rltgoDzvO --delete --delay-updates public/ "$DEPLOY_USER@$DEPLOY_HOST:$TARGET"
+          SF_DEPLOY_HOST: ${{ vars.SF_DEPLOY_HOST }}
+          SF_DEPLOY_USER: ${{ vars.SF_DEPLOY_USER }}
+          SF_DEPLOY_PORT: ${{ vars.SF_DEPLOY_PORT }}
+          SF_TARGET: ${{ vars.SF_TARGET }}
+          SF_SSH_KNOWN_HOSTS: ${{ vars.SF_SSH_KNOWN_HOSTS }}
+        run: python3 scripts/deploy_dual.py
       - name: Google ping sitemap
         run: |
           curl https://www.google.com/ping?sitemap=https://blog.davidz.cn/sitemap.xml
