@@ -38,11 +38,11 @@ jobs:
           DEPLOY_PORT: ${{ vars.DEPLOY_PORT }}
           TARGET: ${{ vars.TARGET }}
           SSH_KNOWN_HOSTS: ${{ vars.SSH_KNOWN_HOSTS }}
-          SF_DEPLOY_HOST: ${{ vars.SF_DEPLOY_HOST }}
-          SF_DEPLOY_USER: ${{ vars.SF_DEPLOY_USER }}
-          SF_DEPLOY_PORT: ${{ vars.SF_DEPLOY_PORT }}
-          SF_TARGET: ${{ vars.SF_TARGET }}
-          SF_SSH_KNOWN_HOSTS: ${{ vars.SF_SSH_KNOWN_HOSTS }}
+          SJ_DEPLOY_HOST: ${{ vars.SJ_DEPLOY_HOST }}
+          SJ_DEPLOY_USER: ${{ vars.SJ_DEPLOY_USER }}
+          SJ_DEPLOY_PORT: ${{ vars.SJ_DEPLOY_PORT }}
+          SJ_TARGET: ${{ vars.SJ_TARGET }}
+          SJ_SSH_KNOWN_HOSTS: ${{ vars.SJ_SSH_KNOWN_HOSTS }}
         run: python3 scripts/deploy_dual.py
       - name: Google ping sitemap
         run: |

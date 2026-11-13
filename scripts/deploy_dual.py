@@ -31,7 +31,7 @@ def main():
         sums = Path(temp) / 'SHA256SUMS'
         sums.write_text(manifest)
         hosts = []
-        for prefix, expected_host, expected_user in [('', '101.132.243.87', 'root'), ('SF_', '43.153.17.172', 'ubuntu')]:
+        for prefix, expected_host, expected_user in [('', '101.132.243.87', 'root'), ('SJ_', '150.230.40.131', 'ubuntu')]:
             def env(name):
                 return os.environ[prefix + name]
             assert env('DEPLOY_HOST') == expected_host
